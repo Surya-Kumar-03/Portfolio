@@ -19,7 +19,7 @@ function SideBar() {
           <NavLink exact="true" activeclassname="active" to="/" className="sidebar-option">
             <HomeIcon
               className="sidebar-icon"
-              style={{ fontSize: "2.5rem" }}
+              style={{ fontSize: "2.5rem"}}
             ></HomeIcon>
             <h1>Home</h1>
           </NavLink>
@@ -56,7 +56,7 @@ function SideBar() {
               className="sidebar-icon"
               style={{ fontSize: "2.5rem" }}
             ></Contact>
-            <h1>Contact</h1>
+            <h1>Contact Me</h1>
           </NavLink>
         </nav>
       </Link>

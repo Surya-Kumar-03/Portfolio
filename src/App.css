@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .sidebar-option {
-  @apply flex flex-row items-center text-yellow-200 sm:text-gray-400
+  @apply flex flex-row w-60 sm:w-48 items-center text-yellow-200 sm:text-gray-400
    hover:text-yellow-200 text-2xl sm:text-lg;
 }
 
