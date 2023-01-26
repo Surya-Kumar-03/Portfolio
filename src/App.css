@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sidebar-option {
+  @apply flex flex-row items-center text-yellow-200 sm:text-gray-400
+   hover:text-yellow-200 text-2xl sm:text-lg;
+}
+
+.sidebar-icon {
+  @apply text-gray-400 m-3 sm:m-2;
+}

@@ -1,8 +1,13 @@
 import React from "react";
-
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
 
 function App() {
-  return <div>Hello World!</div>;
+  return (
+    <Routes>
+      <Route path="/" element={<Layout></Layout>}></Route>
+    </Routes>
+  );
 }
 
 export default App;
