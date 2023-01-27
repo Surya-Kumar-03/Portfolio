@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400&display=swap');
+
+body{
+  font-family: 'Unbounded', cursive;
+}
 
 .sidebar-option {
   @apply flex flex-row w-60 items-center sm:w-48;

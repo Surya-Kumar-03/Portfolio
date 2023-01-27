@@ -87,7 +87,7 @@ function SideBar() {
               className="sidebar-icon"
               style={{ fontSize: "1.9rem" }}
             ></Contact>
-            <h1 className="sidebar-text">Contact Me</h1>
+            <h1 className="sidebar-text">Contact</h1>
           </NavLink>
         </nav>
         <div className="flex flex-row h-screen items-end ">
