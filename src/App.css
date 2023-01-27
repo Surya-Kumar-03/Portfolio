@@ -16,7 +16,7 @@ body{
 }
 
 .sidebar-text {
-  @apply text-3xl sm:text-2xl font-thin sm:text-gray-300 cursor-pointer duration-200;
+  @apply text-2xl font-thin sm:text-gray-300 cursor-pointer duration-200;
 }
 
 @media (max-width: 642px) {
