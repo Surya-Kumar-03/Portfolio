@@ -22,7 +22,7 @@ function SideBar() {
       window.removeEventListener("resize", handleWindowSizeChange);
     };
   }, []);
-  const showSidebar = width <= 768;  //output
+  const showSidebar = width <= 768; //output
 
   // Bool to check whether Navbar Open or Closed
   const [navbarOpen, setNavbarOpen] = useState(!showSidebar);
@@ -34,10 +34,16 @@ function SideBar() {
     <div>
       <div
         to="/"
-        className="flex flex-col items-center pb-4 sm:pb-2 w-screen sm:w-56 h-max sm:h-screen bg-gray-700"
+        className="flex flex-col items-center pb-4 sm:pb-2 w-screen sm:w-56 h-auto sm:h-screen bg-gray-700"
       >
-        <img src={logo} alt="logo" className="w-20 sm:w-56"></img>
-        <Icon onClick={handleChange} className="text-white h-8 w-8 sm:hidden" icon="quill:hamburger-sidebar" />
+        <div className="flex flex-row items-center">
+          <Icon
+            onClick={handleChange}
+            className="text-white h-8 w-8 sm:hidden"
+            icon="quill:hamburger-sidebar"
+          />
+          <img src={logo} alt="logo" className="w-16 sm:w-56"></img>
+        </div>
         <nav className="flex flex-col justify-center">
           {navbarOpen ? (
             <>
