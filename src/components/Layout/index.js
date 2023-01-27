@@ -3,9 +3,9 @@ import { Outlet } from "react-router-dom";
 
 function Layout() {
   return (
-    <div className="sm:flex sm:flex-row">
-      <SideBar></SideBar>
-      <Outlet></Outlet>
+    <div>
+      <SideBar />
+      <Outlet />
     </div>
   );
 }
