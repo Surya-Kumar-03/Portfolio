@@ -1,9 +1,11 @@
-import SideBar from "./Sidebar";
+import SideBar from "../Sidebar";
+import { Outlet } from "react-router-dom";
 
 function Layout() {
   return (
-    <div>
+    <div className="sm:flex sm:flex-row">
       <SideBar></SideBar>
+      <Outlet></Outlet>
     </div>
   );
 }

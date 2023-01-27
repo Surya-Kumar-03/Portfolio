@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../../assets/logo.png";
+import logo from "../../assets/logo.png";
 import HomeIcon from "@mui/icons-material/HomeOutlined";
 import WorkIcon from "@mui/icons-material/LocalLibraryOutlined";
 import School from "@mui/icons-material/SchoolOutlined";
@@ -13,9 +13,9 @@ function SideBar() {
     <div>
       <Link
         to="/"
-        className="flex flex-col items-center w-screen sm:w-56 h-screen bg-gray-700"
+        className="flex flex-col items-center pb-4 sm:pb-2 w-screen sm:w-56 h-max sm:h-screen bg-gray-700"
       >
-        <img src={logo} alt="logo" className="w-56"></img>
+        <img src={logo} alt="logo" className="w-20 sm:w-56"></img>
         <nav className="flex flex-col justify-center">
           <NavLink
             exact="true"
@@ -25,7 +25,7 @@ function SideBar() {
           >
             <HomeIcon
               className="sidebar-icon"
-              style={{ fontSize: "1.9rem" }}
+              style={{ fontSize: "1.6rem" }}
             ></HomeIcon>
             <h1 className="sidebar-text">Home</h1>
           </NavLink>
@@ -37,7 +37,7 @@ function SideBar() {
           >
             <Experience
               className="sidebar-icon"
-              style={{ fontSize: "1.9rem" }}
+              style={{ fontSize: "1.6rem" }}
             ></Experience>
             <h1 className="sidebar-text">Experience</h1>
           </NavLink>
@@ -49,7 +49,7 @@ function SideBar() {
           >
             <WorkIcon
               className="sidebar-icon"
-              style={{ fontSize: "1.9rem" }}
+              style={{ fontSize: "1.6rem" }}
             ></WorkIcon>
             <h1 className="sidebar-text">Skills</h1>
           </NavLink>
@@ -61,7 +61,7 @@ function SideBar() {
           >
             <School
               className="sidebar-icon"
-              style={{ fontSize: "1.9rem" }}
+              style={{ fontSize: "1.6rem" }}
             ></School>
             <h1 className="sidebar-text">Education</h1>
           </NavLink>
@@ -73,7 +73,7 @@ function SideBar() {
           >
             <Interests
               className="sidebar-icon"
-              style={{ fontSize: "1.9rem" }}
+              style={{ fontSize: "1.6rem" }}
             ></Interests>
             <h1 className="sidebar-text">Interests</h1>
           </NavLink>
@@ -85,12 +85,12 @@ function SideBar() {
           >
             <Contact
               className="sidebar-icon"
-              style={{ fontSize: "1.9rem" }}
+              style={{ fontSize: "1.6rem" }}
             ></Contact>
             <h1 className="sidebar-text">Contact</h1>
           </NavLink>
         </nav>
-        <div className="flex flex-row h-screen items-end ">
+        <div className="flex flex-row h-max sm:h-screen items-start sm:items-end ">
           <Link
             onClick={() =>
               window.open(
