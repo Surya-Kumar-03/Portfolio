@@ -91,22 +91,43 @@ function SideBar() {
           </NavLink>
         </nav>
         <div className="flex flex-row h-screen items-end ">
-          <Icon
-            icon="mdi:linkedin"
-            className="sidebar-profileIcon"
-          />
-          <Icon
-            icon="carbon:logo-github"
-            className="sidebar-profileIcon"
-          />
-          <Icon
-            icon="cib:leetcode"
-            className="sidebar-profileIcon"
-          />
-          <Icon
-            icon="simple-icons:geeksforgeeks"
-            className="sidebar-profileIcon"
-          />
+          <Link
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/bandepalli-surya/",
+                "_blank"
+              )
+            }
+          >
+            <Icon icon="mdi:linkedin" className="sidebar-profileIcon" />
+          </Link>
+          <Link
+            onClick={() =>
+              window.open("https://github.com/Surya-Kumar-03", "_blank")
+            }
+          >
+            <Icon icon="carbon:logo-github" className="sidebar-profileIcon" />
+          </Link>
+          <Link
+            onClick={() =>
+              window.open("https://leetcode.com/bsuryakumar03/", "_blank")
+            }
+          >
+            <Icon icon="cib:leetcode" className="sidebar-profileIcon" />
+          </Link>
+          <Link
+            onClick={() =>
+              window.open(
+                "https://auth.geeksforgeeks.org/user/bsuryakumar03/practice/",
+                "_blank"
+              )
+            }
+          >
+            <Icon
+              icon="simple-icons:geeksforgeeks"
+              className="sidebar-profileIcon"
+            />
+          </Link>
         </div>
       </Link>
     </div>
