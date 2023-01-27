@@ -19,44 +19,44 @@ function SideBar() {
           <NavLink exact="true" activeclassname="active" to="/" className="sidebar-option">
             <HomeIcon
               className="sidebar-icon"
-              style={{ fontSize: "2.5rem"}}
+              style={{ fontSize: "1.9rem"}}
             ></HomeIcon>
-            <h1>Home</h1>
+            <h1 className="sidebar-text">Home</h1>
           </NavLink>
           <NavLink exact="true" activeclassname="active" to="/experience" className="sidebar-option">
             <Experience
               className="sidebar-icon"
-              style={{ fontSize: "2.5rem" }}
+              style={{ fontSize: "1.9rem" }}
             ></Experience>
-            <h1>Experience</h1>
+            <h1 className="sidebar-text">Experience</h1>
           </NavLink>
           <NavLink exact="true" activeclassname="active" to="/skills" className="sidebar-option">
             <WorkIcon
               className="sidebar-icon"
-              style={{ fontSize: "2.5rem" }}
+              style={{ fontSize: "1.9rem" }}
             ></WorkIcon>
-            <h1>Skills</h1>
+            <h1 className="sidebar-text">Skills</h1>
           </NavLink>
           <NavLink exact="true" activeclassname="active" to="/education" className="sidebar-option">
             <School
               className="sidebar-icon"
-              style={{ fontSize: "2.5rem" }}
+              style={{ fontSize: "1.9rem" }}
             ></School>
-            <h1>Education</h1>
+            <h1 className="sidebar-text">Education</h1>
           </NavLink>
           <NavLink exact="true" activeclassname="active" to="/interests" className="sidebar-option">
             <Interests
               className="sidebar-icon"
-              style={{ fontSize: "2.5rem" }}
+              style={{ fontSize: "1.9rem" }}
             ></Interests>
-            <h1>Interests</h1>
+            <h1 className="sidebar-text">Interests</h1>
           </NavLink>
-          <NavLink exact="true" activeclassname="active" to="/contact" className="sidebar-option">
+          <NavLink exact="true" activeclassname="active" to="/contact_me" className="sidebar-option">
             <Contact
               className="sidebar-icon"
-              style={{ fontSize: "2.5rem" }}
+              style={{ fontSize: "1.9rem" }}
             ></Contact>
-            <h1>Contact Me</h1>
+            <h1 className="sidebar-text">Contact Me</h1>
           </NavLink>
         </nav>
       </Link>

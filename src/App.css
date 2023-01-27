@@ -3,10 +3,19 @@
 @tailwind utilities;
 
 .sidebar-option {
-  @apply flex flex-row w-60 sm:w-48 items-center text-yellow-200 sm:text-gray-400
-   hover:text-yellow-200 text-2xl sm:text-lg;
+  @apply flex flex-row w-60 items-center sm:w-48
 }
 
 .sidebar-icon {
-  @apply text-gray-400 m-3 sm:m-2;
+  @apply text-gray-400 m-2;
+}
+
+.sidebar-text{
+  @apply text-3xl sm:text-2xl font-thin text-gray-300 cursor-pointer duration-200
+}
+
+.sidebar-text:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
 }
