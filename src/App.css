@@ -3,19 +3,32 @@
 @tailwind utilities;
 
 .sidebar-option {
-  @apply flex flex-row w-60 items-center sm:w-48
+  @apply flex flex-row w-60 items-center sm:w-48;
 }
 
 .sidebar-icon {
-  @apply text-gray-400 m-2;
+  @apply text-gray-300 m-2;
 }
 
-.sidebar-text{
-  @apply text-3xl sm:text-2xl font-thin text-gray-300 cursor-pointer duration-200
+.sidebar-text {
+  @apply text-3xl sm:text-2xl font-thin sm:text-gray-300 cursor-pointer duration-200;
 }
 
-.sidebar-text:hover {
+@media (max-width: 642px) {
+  .sidebar-text {
+    color: #fff;
+    text-shadow: 0 0 5px #03e8f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+      0 0 100px #03e9f4;
+  }
+}
+
+.sidebar-option:hover {
   color: #fff;
   text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
     0 0 100px #03e9f4;
+}
+
+.sidebar-profileIcon{
+  @apply h-16 w-12 sm:h-10 sm:w-8 hover:w-14
+  m-1 text-gray-300 hover:text-yellow-200 duration-200;
 }
