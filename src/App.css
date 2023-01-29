@@ -70,3 +70,7 @@ body {
 .animateFont-before{
   animation: flipInX 2s forwards;
 }
+
+.animateName{
+  animation: flipInY 2s forwards;
+}
