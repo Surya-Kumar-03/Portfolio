@@ -4,7 +4,8 @@ import Logo from "../LogoHome";
 function Home() {
   return (
     // Container
-    <div className="flex flex-row w-screen h-screen justify-center items-center">
+    <div className="flex flex-col sm:flex-row sm:w-screen h-[85vh] sm:h-screen 
+    justify-center sm:items-center">
       <div className="home-container">
         {/* Text */}
         <p className="text-4xl m-2 text-styling animateFont-before">Hi, I'm</p>
