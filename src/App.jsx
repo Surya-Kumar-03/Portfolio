@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
+import Education from "./components/Education";
 import 'animate.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout></Layout>}>
         <Route index element={<Home></Home>}></Route>
+        <Route path="/education" element={<Education></Education>}></Route>
       </Route>
     </Routes>
   );

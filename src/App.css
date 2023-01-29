@@ -86,3 +86,11 @@ body {
     z-index: -1;
   }
 }
+
+.animateHeading{
+  animation: bounce 1.5s forwards;
+}
+
+.animateCards{
+  animation: fadeInUp 500ms forwards;
+}
