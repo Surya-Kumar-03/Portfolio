@@ -92,5 +92,13 @@ body {
 }
 
 .animateCards{
-  animation: fadeInUp 500ms forwards;
+  animation: flipInX 500ms forwards;
+}
+
+.cardsFontChanger{
+  font-family: "Unbounded", cursive;
+}
+
+.cardsSubtitleFont{
+  font-family: 'Indie Flower', cursive;
 }
