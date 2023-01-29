@@ -22,7 +22,7 @@ function SideBar() {
       window.removeEventListener("resize", handleWindowSizeChange);
     };
   }, []);
-  const showSidebar = width <= 768; //output
+  const showSidebar = width <= 640; //output
 
   // Bool to check whether Navbar Open or Closed
   const [navbarOpen, setNavbarOpen] = useState(!showSidebar);
@@ -44,7 +44,7 @@ function SideBar() {
           />
           <img src={logo} alt="logo" className="w-16 sm:w-56"></img>
         </div>
-        <nav className="flex flex-col justify-center">
+        <nav className="flex flex-col justify-center ml-11 sm:ml-0">
           {navbarOpen ? (
             <>
               <NavLink

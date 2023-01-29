@@ -1,10 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-body{
-  font-family: 'Unbounded', cursive;
+body {
+  font-family: "Unbounded", cursive;
 }
 
 .sidebar-option {
@@ -33,7 +34,35 @@ body{
     0 0 100px #03e9f4;
 }
 
-.sidebar-profileIcon{
+.sidebar-profileIcon {
   @apply hidden sm:block h-16 w-12 sm:h-10 sm:w-8 hover:w-14
   m-1 text-gray-300 hover:text-yellow-200 duration-200;
+}
+
+.home-container {
+  opacity: 0;
+  transform-style: preserve-3d;
+  animation: fadeIn 2s forwards;
+}
+
+.home-container {
+  @apply flex flex-col items-center justify-center w-screen h-[90vh];
+}
+
+.schar-style {
+  animation: swing;
+  animation-duration: 2s;
+  animation-delay: 100ms;
+}
+
+.schar-style {
+  @apply h-28;
+}
+
+.page-alignStyles{
+  @apply text-4xl m-2
+}
+
+.text-styling{
+  font-family: 'Indie Flower', cursive;
 }
