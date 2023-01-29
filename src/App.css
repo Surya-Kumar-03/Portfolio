@@ -46,7 +46,7 @@ body {
 }
 
 .home-container {
-  @apply flex flex-col items-center justify-center w-screen h-[90vh];
+  @apply flex flex-col items-center justify-center w-screen h-screen;
 }
 
 .schar-style {
@@ -59,10 +59,14 @@ body {
   @apply h-28;
 }
 
-.page-alignStyles{
-  @apply text-4xl m-2
-}
-
 .text-styling{
   font-family: 'Indie Flower', cursive;
+}
+
+.animateFont-after{
+  animation: fadeInUp 1s forwards;
+}
+
+.animateFont-before{
+  animation: flipInX 2s forwards;
 }
