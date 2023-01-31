@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@frank-mayer/react-tag-cloud": "^1.1.1",
     "@iconify/react": "^4.0.1",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.6",
