@@ -39,7 +39,7 @@ function SideBar() {
         <div className="flex flex-row items-center">
           <Icon
             onClick={handleChange}
-            className="text-white h-8 w-8 sm:hidden"
+            className="text-white h-8 w-8 sm:hidden animateHamburger"
             icon="quill:hamburger-sidebar"
           />
           <img src={logo} alt="logo" className="w-16 sm:w-56"></img>
@@ -52,6 +52,7 @@ function SideBar() {
                 activeclassname="active"
                 to="/"
                 className="sidebar-option"
+                onClick={navbarOpen && showSidebar ? handleChange : null}
               >
                 <HomeIcon
                   className="sidebar-icon"
@@ -64,6 +65,7 @@ function SideBar() {
                 activeclassname="active"
                 to="/experience"
                 className="sidebar-option"
+                onClick={navbarOpen && showSidebar ? handleChange : null}
               >
                 <Experience
                   className="sidebar-icon"
@@ -76,6 +78,7 @@ function SideBar() {
                 activeclassname="active"
                 to="/skills"
                 className="sidebar-option"
+                onClick={navbarOpen && showSidebar ? handleChange : null}
               >
                 <WorkIcon
                   className="sidebar-icon"
@@ -88,6 +91,7 @@ function SideBar() {
                 activeclassname="active"
                 to="/education"
                 className="sidebar-option"
+                onClick={navbarOpen && showSidebar ? handleChange : null}
               >
                 <School
                   className="sidebar-icon"
@@ -100,6 +104,7 @@ function SideBar() {
                 activeclassname="active"
                 to="/interests"
                 className="sidebar-option"
+                onClick={navbarOpen && showSidebar ? handleChange : null}
               >
                 <Interests
                   className="sidebar-icon"
@@ -112,6 +117,7 @@ function SideBar() {
                 activeclassname="active"
                 to="/contact_me"
                 className="sidebar-option"
+                onClick={navbarOpen && showSidebar ? handleChange : null}
               >
                 <Contact
                   className="sidebar-icon"
