@@ -36,13 +36,15 @@ function SideBar() {
         to="/"
         className="flex flex-col items-center pb-4 sm:pb-2 w-screen sm:w-56 h-auto sm:h-screen bg-gray-700"
       >
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row w-full items-center justify-start">
           <Icon
             onClick={handleChange}
-            className="text-white h-8 w-8 sm:hidden animateHamburger"
+            className="text-white h-9 w-9 rounded-md ml-3 sm:hidden animateHamburger"
             icon="quill:hamburger-sidebar"
           />
-          <img src={logo} alt="logo" className="w-16 sm:w-56"></img>
+          <div className="flex flex-row flex-grow justify-center items-center">
+          <img src={logo} alt="logo" className="w-16 mr-8 sm:mr-0 sm:w-56"></img>
+          </div>
         </div>
         <nav className="flex flex-col justify-center ml-11 sm:ml-0">
           {navbarOpen ? (

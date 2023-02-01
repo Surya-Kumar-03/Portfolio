@@ -1,3 +1,4 @@
+import CodingStats from "./CodingStats";
 import SkillsSphere from "./skillsSphere";
 
 function Skills() {
@@ -18,6 +19,7 @@ function Skills() {
         are usually a bundle of..
       </h1>
       <SkillsSphere></SkillsSphere>
+      <CodingStats></CodingStats>
     </div>
   );
 }
