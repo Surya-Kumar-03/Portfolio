@@ -22,7 +22,6 @@ function Home() {
           <h1 className="text-xl font-thin text-center animateFont-after">
             Hover around to discover more about me!{" "}
           </h1>
-          {/* <h2></h2> */}
         </div>
       </div>
       <Logo></Logo>

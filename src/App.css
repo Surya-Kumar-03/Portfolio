@@ -35,7 +35,7 @@ body {
 }
 
 .sidebar-profileIcon {
-  @apply hidden sm:block h-16 w-12 sm:h-10 sm:w-8 hover:w-14
+  @apply h-10 w-9 sm:h-10 sm:w-8 hover:w-14
   m-1 text-gray-300 hover:text-yellow-200 duration-200;
 }
 

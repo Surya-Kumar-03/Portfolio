@@ -129,43 +129,50 @@ function SideBar() {
           ) : null}
         </nav>
         <div className="flex flex-row h-max sm:h-screen items-start sm:items-end ">
-          <Link
-            onClick={() =>
-              window.open(
-                "https://www.linkedin.com/in/bandepalli-surya/",
-                "_blank"
-              )
-            }
-          >
-            <Icon icon="mdi:linkedin" className="sidebar-profileIcon" />
-          </Link>
-          <Link
-            onClick={() =>
-              window.open("https://github.com/Surya-Kumar-03", "_blank")
-            }
-          >
-            <Icon icon="carbon:logo-github" className="sidebar-profileIcon" />
-          </Link>
-          <Link
-            onClick={() =>
-              window.open("https://leetcode.com/bsuryakumar03/", "_blank")
-            }
-          >
-            <Icon icon="cib:leetcode" className="sidebar-profileIcon" />
-          </Link>
-          <Link
-            onClick={() =>
-              window.open(
-                "https://auth.geeksforgeeks.org/user/bsuryakumar03/practice/",
-                "_blank"
-              )
-            }
-          >
-            <Icon
-              icon="simple-icons:geeksforgeeks"
-              className="sidebar-profileIcon"
-            />
-          </Link>
+          {navbarOpen ? (
+            <>
+              <Link
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/bandepalli-surya/",
+                    "_blank"
+                  )
+                }
+              >
+                <Icon icon="mdi:linkedin" className="sidebar-profileIcon" />
+              </Link>
+              <Link
+                onClick={() =>
+                  window.open("https://github.com/Surya-Kumar-03", "_blank")
+                }
+              >
+                <Icon
+                  icon="carbon:logo-github"
+                  className="sidebar-profileIcon"
+                />
+              </Link>
+              <Link
+                onClick={() =>
+                  window.open("https://leetcode.com/bsuryakumar03/", "_blank")
+                }
+              >
+                <Icon icon="cib:leetcode" className="sidebar-profileIcon" />
+              </Link>
+              <Link
+                onClick={() =>
+                  window.open(
+                    "https://auth.geeksforgeeks.org/user/bsuryakumar03/practice/",
+                    "_blank"
+                  )
+                }
+              >
+                <Icon
+                  icon="simple-icons:geeksforgeeks"
+                  className="sidebar-profileIcon"
+                />
+              </Link>
+            </>
+          ) : null}
         </div>
       </div>
     </div>

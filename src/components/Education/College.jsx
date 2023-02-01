@@ -15,15 +15,15 @@ export default function MediaCard() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          <h1 className="cardsFontChanger">
+          <p className="cardsFontChanger">
             Bachelor's in Computer Science and Engineering
-          </h1>
+          </p>
         </Typography>
         <Typography gutterBottom variant="h5" component="div">
           <p className="cardsSubtitleFont text-3xl">(2020 - 2024)</p>
         </Typography>
         <Typography variant="h5" color="text.secondary">
-          <h1 className="cardsFontChanger">Sathyabama University, Chennai.</h1>
+          <p className="cardsFontChanger">Sathyabama University, Chennai.</p>
         </Typography>
       </CardContent>
     </Card>
