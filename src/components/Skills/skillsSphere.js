@@ -21,6 +21,7 @@ const SkillsSphere = () => (
       "Javascript ES6",
       "jQuery",
       "ReactJS",
+      "Material UI",
       "NodeJS",
       "ExpressJS",
       "MongoDB",

@@ -1,11 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import HomeIcon from "@mui/icons-material/HomeOutlined";
-import WorkIcon from "@mui/icons-material/LocalLibraryOutlined";
-import School from "@mui/icons-material/SchoolOutlined";
-import Interests from "@mui/icons-material/InterestsOutlined";
-import Experience from "@mui/icons-material/WorkHistoryOutlined";
-import Contact from "@mui/icons-material/ContactsOutlined";
 import { Icon } from "@iconify/react";
 import { useState, useEffect } from "react";
 
@@ -60,25 +54,31 @@ function SideBar() {
                 className="sidebar-option"
                 onClick={navbarOpen && showSidebar ? handleChange : null}
               >
-                <HomeIcon
+                <Icon
+                  icon="material-symbols:home-app-logo"
+                  color="#cfd5db"
+                  width="30"
+                  height="30"
                   className="sidebar-icon"
-                  style={{ fontSize: "1.6rem" }}
-                ></HomeIcon>
+                />
                 <h1 className="sidebar-text">Home</h1>
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 exact="true"
                 activeclassname="active"
                 to="/experience"
                 className="sidebar-option"
                 onClick={navbarOpen && showSidebar ? handleChange : null}
               >
-                <Experience
+                <Icon
+                  icon="ic:round-work-history"
+                  color="#cfd5db"
+                  width="30"
+                  height="30"
                   className="sidebar-icon"
-                  style={{ fontSize: "1.6rem" }}
-                ></Experience>
+                />
                 <h1 className="sidebar-text">Experience</h1>
-              </NavLink>
+              </NavLink> */}
               <NavLink
                 exact="true"
                 activeclassname="active"
@@ -86,10 +86,13 @@ function SideBar() {
                 className="sidebar-option"
                 onClick={navbarOpen && showSidebar ? handleChange : null}
               >
-                <WorkIcon
+                <Icon
+                  icon="icon-park-outline:brain"
+                  color="#cfd5db"
+                  width="30"
+                  height="30"
                   className="sidebar-icon"
-                  style={{ fontSize: "1.6rem" }}
-                ></WorkIcon>
+                />
                 <h1 className="sidebar-text">Skills</h1>
               </NavLink>
               <NavLink
@@ -99,25 +102,31 @@ function SideBar() {
                 className="sidebar-option"
                 onClick={navbarOpen && showSidebar ? handleChange : null}
               >
-                <School
+                <Icon
+                  icon="fluent-mdl2:education"
+                  color="#cfd5db"
+                  width="30"
+                  height="30"
                   className="sidebar-icon"
-                  style={{ fontSize: "1.6rem" }}
-                ></School>
+                />
                 <h1 className="sidebar-text">Education</h1>
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 exact="true"
                 activeclassname="active"
                 to="/interests"
                 className="sidebar-option"
                 onClick={navbarOpen && showSidebar ? handleChange : null}
               >
-                <Interests
+                <Icon
+                  icon="material-symbols:interests-outline"
+                  color="#cfd5db"
+                  width="30"
+                  height="30"
                   className="sidebar-icon"
-                  style={{ fontSize: "1.6rem" }}
-                ></Interests>
+                />
                 <h1 className="sidebar-text">Interests</h1>
-              </NavLink>
+              </NavLink> */}
               <NavLink
                 exact="true"
                 activeclassname="active"
@@ -125,10 +134,13 @@ function SideBar() {
                 className="sidebar-option"
                 onClick={navbarOpen && showSidebar ? handleChange : null}
               >
-                <Contact
+                <Icon
+                  icon="material-symbols:contact-mail-rounded"
+                  color="#cfd5db"
+                  width="30"
+                  height="30"
                   className="sidebar-icon"
-                  style={{ fontSize: "1.6rem" }}
-                ></Contact>
+                />
                 <h1 className="sidebar-text">Contact</h1>
               </NavLink>
             </>

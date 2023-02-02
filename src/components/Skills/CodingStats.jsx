@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const App = () => {
+const CodingStats = () => {
   const totalSolved = 215; //Hardcoded Question Count Here
   const [displayedValue, setDisplayedValue] = useState(0);
 
@@ -20,8 +20,8 @@ const App = () => {
 
   return (
     <div
-      className="flex flex-col lg:flex-row text-4xl font-light items-center justify-center
-     bg-gray-100 p-2 rounded-xl lg:bg-none mt-4 animateFont-after"
+      className="flex flex-col lg:flex-row w-full text-4xl font-light items-center justify-center
+    bg-gray-100 p-2 rounded-xl lg:bg-none -mt-4 sm:mt-4 animateFont-after"
     >
       <h1 className="flex flex-row w-24 h-[70%] items-center justify-center font-medium pt-1 text-pink-600">
         {displayedValue}+
@@ -53,4 +53,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default CodingStats;
