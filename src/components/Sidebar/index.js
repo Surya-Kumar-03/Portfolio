@@ -34,7 +34,7 @@ function SideBar() {
     <div>
       <div
         to="/"
-        className="flex flex-col items-center pb-4 sm:pb-2 w-screen sm:w-56 h-auto sm:h-screen bg-gray-700"
+        className="flex flex-col items-center pb-4 sm:pb-2 w-screen sm:w-56 h-auto sm:h-screen bg-gray-700 sm:fixed z-10"
       >
         <div className="flex flex-row w-full items-center justify-start">
           <Icon
@@ -43,7 +43,11 @@ function SideBar() {
             icon="quill:hamburger-sidebar"
           />
           <div className="flex flex-row flex-grow justify-center items-center">
-          <img src={logo} alt="logo" className="w-16 mr-8 sm:mr-0 sm:w-56"></img>
+            <img
+              src={logo}
+              alt="logo"
+              className="w-16 mr-8 sm:mr-0 sm:w-56"
+            ></img>
           </div>
         </div>
         <nav className="flex flex-col justify-center ml-11 sm:ml-0">

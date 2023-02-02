@@ -5,7 +5,7 @@ function Home() {
   return (
     // Container
     <div
-      className="flex flex-col sm:flex-row sm:w-screen h-[85vh] sm:h-screen justify-center sm:items-center"
+      className="flex flex-col sm:flex-row sm:w-screen h-[85vh] sm:h-screen justify-center sm:items-center sm:ml-56"
     >
       <div className="home-container">
         {/* Text */}

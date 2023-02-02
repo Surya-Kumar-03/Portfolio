@@ -6,7 +6,7 @@ function Skills() {
   //Heroku google cloud cyclic render netlify
   // git github vscode
   return (
-    <div className="flex flex-col flex-grow justify-center items-center m-4 overflow-hidden">
+    <div className="flex flex-col flex-grow justify-center items-center m-4 overflow-hidden sm:ml-60">
       <h1 className="text-styling text-5xl m-4 animateSkillsHeading">
         Skills:{" "}
       </h1>
