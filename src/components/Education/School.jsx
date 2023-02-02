@@ -7,21 +7,25 @@ import SdaImg from "../../assets/Sda.svg";
 
 export default function MediaCard() {
   return (
-    <Card sx={{ maxWidth: 345 }} className="animateCards m-2">
-      <CardMedia sx={{ height: 300 }} image={SdaImg} title="SDA School" />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          <p className="cardsFontChanger">
-            Elementary to Higher Secondary Education
-          </p>
-        </Typography>
-        <Typography gutterBottom variant="h5" component="div">
-          <p className="cardsSubtitleFont text-3xl">(2006 - 2020)</p>
-        </Typography>
-        <Typography variant="h5" color="text.secondary">
-          <p className="cardsFontChanger">Seventh-Day Adventist School, Hosur.</p>
-        </Typography>
-      </CardContent>
-    </Card>
+    <div className="lg:hover:scale-105 transition-all">
+      <Card sx={{ maxWidth: 345 }} className="animateCards m-2">
+        <CardMedia sx={{ height: 300 }} image={SdaImg} title="SDA School" />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            <p className="cardsFontChanger">
+              Elementary to Higher Secondary Education
+            </p>
+          </Typography>
+          <Typography gutterBottom variant="h5" component="div">
+            <p className="cardsSubtitleFont text-3xl">(2006 - 2020)</p>
+          </Typography>
+          <Typography variant="h5" color="text.secondary">
+            <p className="cardsFontChanger">
+              Seventh-Day Adventist School, Hosur.
+            </p>
+          </Typography>
+        </CardContent>
+      </Card>
+    </div>
   );
 }
