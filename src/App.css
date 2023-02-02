@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
 body {
   font-family: "Unbounded", cursive;
@@ -59,57 +59,76 @@ body {
   @apply h-28;
 }
 
-.text-styling{
-  font-family: 'Indie Flower', cursive;
+.text-styling {
+  font-family: "Indie Flower", cursive;
 }
 
-.animateFont-after{
+.animateFont-after {
   animation: fadeInUp 1s forwards;
 }
 
-.animateFont-before{
+.animateFont-before {
   animation: flipInX 2s forwards;
 }
 
-.animateName{
+.animateName {
   animation: flipInY 2s forwards;
 }
 
-.svgAnimation{
+.svgAnimation {
   animation: rubberBand 2s forwards;
 }
 
 @media (min-width: 0px) and (max-width: 640px) {
-  .svgAnimation{
+  .svgAnimation {
     position: absolute;
     opacity: 0.2;
     z-index: -1;
   }
 }
 
-.animateHeading{
+.animateHeading {
   animation: bounce 1.5s forwards;
 }
 
-.animateCards{
+.animateCards {
   animation: flipInX 500ms forwards;
 }
 
-.cardsFontChanger{
+.cardsFontChanger {
   font-family: "Unbounded", cursive;
 }
 
-.cardsSubtitleFont{
-  font-family: 'Indie Flower', cursive;
+.cardsSubtitleFont {
+  font-family: "Indie Flower", cursive;
 }
 
-.animateSkillsHeading{
+.animateSkillsHeading {
   animation: flipInX 1.5s forwards;
 }
 
-.animateHamburger{
+.animateHamburger {
   animation: jello;
   animation-duration: 1s;
   animation-iteration-count: 2;
   animation-timing-function: linear;
+}
+
+.animatePLs {
+  animation: backInUp 1.5s forwards;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #a2a2a2;
 }
