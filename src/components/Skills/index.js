@@ -21,28 +21,34 @@ function Skills() {
       <SkillsSphere></SkillsSphere>
       <CodingStats></CodingStats>
       <div className="flex flex-col w-full bg-teal-50 my-2 rounded-xl p-3 shadow-md">
-        <h1 className="text-3xl text-center animateFont-after">
-          I can
-          <span className="cardsSubtitleFont text-5xl m-1 text-pink-600 italic">
-            code
-          </span>{" "}
-          in..
-        </h1>
-        <PLanguages></PLanguages>
-        <h1 className="text-3xl text-center animateFont-after mt-4">
-          <span className="cardsSubtitleFont text-5xl m-1 text-pink-600 italic">
-            Cloud platforms
-          </span>{" "}
-          I am familiar with..
-        </h1>
-        <CloudPlatforms></CloudPlatforms>
-        <h1 className="text-3xl text-center animateFont-after mt-4">
-          <span className="cardsSubtitleFont text-5xl m-1 text-pink-600 italic">
-            Developer tools
-          </span>{" "}
-          I use..
-        </h1>
-        <DevTools></DevTools>
+        <div className="flex flex-col w-full mr-2 bg-yellow-100 rounded-xl p-2">
+          <h1 className="text-3xl text-center animateFont-after">
+            I can
+            <span className="cardsSubtitleFont text-5xl m-1 text-pink-600 italic">
+              code
+            </span>{" "}
+            in..
+          </h1>
+          <PLanguages></PLanguages>
+        </div>
+        <div className="flex flex-col w-full mt-2 mr-2 bg-red-100 rounded-xl p-2">
+          <h1 className="text-3xl text-center animateFont-after">
+            <span className="cardsSubtitleFont text-5xl m-1 text-pink-600 italic">
+              Cloud platforms
+            </span>{" "}
+            I am familiar with..
+          </h1>
+          <CloudPlatforms></CloudPlatforms>
+        </div>
+        <div className="flex flex-col w-full mt-2 mr-2 bg-orange-100 rounded-xl p-2">
+          <h1 className="text-3xl text-center animateFont-after">
+            <span className="cardsSubtitleFont text-5xl m-1 text-pink-600 italic">
+              Developer tools
+            </span>{" "}
+            I use..
+          </h1>
+          <DevTools></DevTools>
+        </div>
       </div>
     </div>
   );
