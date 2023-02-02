@@ -4,7 +4,8 @@ import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
-import 'animate.css';
+import Contact from "./components/Contact";
+import "animate.css";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route index element={<Home></Home>}></Route>
         <Route path="/education" element={<Education></Education>}></Route>
         <Route path="/skills" element={<Skills></Skills>}></Route>
+        <Route path="/contact_me" element={<Contact></Contact>}></Route>
       </Route>
     </Routes>
   );

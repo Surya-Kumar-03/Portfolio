@@ -34,7 +34,7 @@ function SideBar() {
           <Icon
             onClick={handleChange}
             className="text-white h-9 w-9 rounded-md ml-3 sm:hidden animateHamburger"
-            icon="quill:hamburger-sidebar"
+            icon="quill:hamburger"
           />
           <div className="flex flex-row flex-grow justify-center items-center">
             <img
