@@ -11,6 +11,12 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Icon } from "@iconify/react";
 import spaceShip from "../../assets/spaceShip.svg";
+import { createTheme } from "@mui/system";
+
+const theme = createTheme({
+  typography: {
+  },
+});
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -35,6 +41,8 @@ export default function SpaceShip() {
       <CardHeader
         title="Space-Ship Model"
         subheader="A cross-domain (Web-ML) application that predicts an astronaut's survival rate."
+        subheaderTypographyProps={{ fontFamily:'"Unbounded",cursive', fontSize:"0.90rem" }} 
+        titleTypographyProps={{fontFamily:'"Unbounded",cursive', fontSize:"1.5rem"}}
       />
       <CardMedia
         component="img"
@@ -43,7 +51,7 @@ export default function SpaceShip() {
         alt="Space-Ship"
       />
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.secondary" theme={theme} className="text-md font-thin">
           ReactJS, HTML5, CSS3, Material UI, Bootstrap, NodeJS, ExpressJS, Netlify
         </Typography>
       </CardContent>
@@ -76,14 +84,14 @@ export default function SpaceShip() {
         </ExpandMore>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph>Description:</Typography>
-          <Typography paragraph>
+        <CardContent className="text-md font-thin">
+          <Typography paragraph theme={theme} className="font-medium">Description:</Typography>
+          <Typography paragraph theme={theme}>
             A cross-domain (Web-ML) application that makes appropriate
             predictions for an astronaut's survival by passing necessary
             parameters.
           </Typography>
-          <Typography>
+          <Typography theme={theme}>
             It was a sarcastic project made for a hypothetical situation.
           </Typography>
         </CardContent>

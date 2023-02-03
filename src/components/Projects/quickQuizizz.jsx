@@ -11,6 +11,12 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Icon } from "@iconify/react";
 import quickQuizizz from "../../assets/quickquizizz.svg";
+import { createTheme } from "@mui/system";
+
+const theme = createTheme({
+  typography: {
+  },
+});
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -35,6 +41,8 @@ export default function QuickQuizizz() {
       <CardHeader
         title="Quick-Quizizz"
         subheader="A responsive online web-based quiz-app with timer."
+        subheaderTypographyProps={{ fontFamily:'"Unbounded",cursive', fontSize:"0.90rem" }} 
+        titleTypographyProps={{fontFamily:'"Unbounded",cursive', fontSize:"1.5rem"}}
       />
       <CardMedia
         component="img"
@@ -43,7 +51,7 @@ export default function QuickQuizizz() {
         alt="Quick-Quizizz"
       />
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.secondary" theme={theme} className="text-md font-thin">
           HTML5, CSS3, Bootstrap 5, Vanilla JS ES6, NodeJS, ExpressJS, MongoDB,
           Mongoose, Cyclic
         </Typography>
@@ -77,13 +85,13 @@ export default function QuickQuizizz() {
         </ExpandMore>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph>Description:</Typography>
-          <Typography paragraph>
+        <CardContent className="text-md font-thin">
+          <Typography paragraph theme={theme} className="font-medium">Description:</Typography>
+          <Typography paragraph theme={theme}>
             A responsive and user-friendly full-stack quiz web app for students
             to assess themselves and gain knowledge.
           </Typography>
-          <Typography>
+          <Typography theme={theme}>
             Teachers can add, change or delete questions as needed (CRUD
             Operations) and view students’ results.
           </Typography>

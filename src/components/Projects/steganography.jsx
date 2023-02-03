@@ -11,6 +11,12 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Icon } from "@iconify/react";
 import steganography from "../../assets/steganography.svg";
+import { createTheme } from "@mui/system";
+
+const theme = createTheme({
+  typography: {
+  },
+});
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -35,6 +41,8 @@ export default function Steganography() {
       <CardHeader
         title="Steganography Implementation"
         subheader="A basic implementation of the idea of steganography."
+        subheaderTypographyProps={{ fontFamily:'"Unbounded",cursive', fontSize:"0.90rem" }} 
+        titleTypographyProps={{fontFamily:'"Unbounded",cursive', fontSize:"1.5rem"}}
       />
       <CardMedia
         component="img"
@@ -43,8 +51,8 @@ export default function Steganography() {
         alt="Steganography"
       />
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          HTML5, CSS3, Bootstrap 5, Tailwind CSS
+        <Typography variant="body2" color="text.secondary" theme={theme} className="text-md font-thin">
+          HTML5, CSS3, Bootstrap 5, Tailwind CSS, Javascript ES6
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -76,16 +84,16 @@ export default function Steganography() {
         </ExpandMore>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph>Description:</Typography>
-          <Typography paragraph>
+        <CardContent className="text-md font-thin">
+          <Typography paragraph theme={theme} className= "font-medium">Description:</Typography>
+          <Typography paragraph theme={theme}>
             Steganography is the practice of hiding information within other,
             seemingly innocent media. This can include hiding a message within
             an image, audio file, or even other text. The goal of steganography
             is to conceal the existence of the message, rather than encrypting
             it, making it more difficult to detect.
           </Typography>
-          <Typography>
+          <Typography theme={theme}>
             Steganography is often used to protect sensitive information, such
             as communication between espionage agents, but it can also be used
             for illegal activities like hiding malware within seemingly innocent
