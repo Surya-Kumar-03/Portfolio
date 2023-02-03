@@ -98,6 +98,22 @@ function SideBar() {
               <NavLink
                 exact="true"
                 activeclassname="active"
+                to="/projects"
+                className="sidebar-option"
+                onClick={navbarOpen && showSidebar ? handleChange : null}
+              >
+                <Icon
+                  icon="eos-icons:project-outlined"
+                  color="#cfd5db"
+                  width="30"
+                  height="30"
+                  className="sidebar-icon"
+                />
+                <h1 className="sidebar-text">Projects</h1>
+              </NavLink>
+              <NavLink
+                exact="true"
+                activeclassname="active"
                 to="/education"
                 className="sidebar-option"
                 onClick={navbarOpen && showSidebar ? handleChange : null}
