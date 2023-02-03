@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Alert from "@mui/material/Alert";
 import AlertTitle from "@mui/material/AlertTitle";
+import SocialMedia from "./socialMedia";
 
 function Contact() {
   const form = useRef();
@@ -34,7 +35,7 @@ function Contact() {
   return (
     <div className="flex flex-col min-h-[85vh] sm:min-h-screen justify-center items-center sm:ml-56 w-full">
       <h1 className="text-styling text-5xl m-4 mt-0 animateSkillsHeading">
-        Contact Me:{" "}
+        Contact:{" "}
       </h1>
       <h1 className="-mt-10 mb-2">____</h1>
       <div className="flex flex-col w-full h-auto animateFont-form items-center justify-center p-2">
@@ -87,7 +88,7 @@ function Contact() {
                 type="submit"
                 className="w-full text-2xl bg-yellow-200 rounded-md placeholder:text-2xl p-3 
                 shadow-md cursor-pointer hover:bg-teal-100 transition-all duration-1000"
-                value="Send"
+                value="Send Message"
               ></input>
             </li>
           </ul>
@@ -104,9 +105,7 @@ function Contact() {
         {messageNotSent ? (
           <Alert severity="error" className="mt-4">
             <AlertTitle>
-              <h1 className="font-bold">
-                Sorry, something went wrong!
-              </h1>
+              <h1 className="font-bold">Sorry, something went wrong!</h1>
             </AlertTitle>
             Contact me at —{" "}
             <a href="mailto:suryawrks4u@gmail.com" className="font-bold">
@@ -114,6 +113,13 @@ function Contact() {
             </a>
           </Alert>
         ) : null}
+        <h1 className="text-3xl text-center mt-4">
+          <span className="cardsSubtitleFont text-5xl m-1 text-pink-600 italic">
+            Connect
+          </span>{" "}
+          with me on..
+        </h1>
+        <SocialMedia></SocialMedia>
       </div>
     </div>
   );

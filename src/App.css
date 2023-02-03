@@ -131,7 +131,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .animateFont-form {
-  animation: fadeInUp 500ms forwards;
+  animation: rollIn 500ms forwards;
 }
 
 .scrollBarStyle-TextArea{
@@ -146,4 +146,8 @@ body::-webkit-scrollbar-thumb {
 
 .scrollBarStyle-TextArea::-webkit-scrollbar-thumb {
   background-color: #a2a2a2;
+}
+
+.contactSocial{
+  animation: bounceIn 2s forwards;
 }
