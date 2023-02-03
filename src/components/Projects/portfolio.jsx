@@ -5,7 +5,11 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import portfolio from "../../assets/portfolio.svg";
+import { createTheme } from "@mui/system";
 
+const theme = createTheme({
+  typography: {},
+});
 
 export default function Portfolio() {
   return (
@@ -13,6 +17,8 @@ export default function Portfolio() {
       <CardHeader
         title="Personal Portfolio"
         subheader="The website you are currently on!"
+        subheaderTypographyProps={{ fontFamily:'"Unbounded",cursive', fontSize:"0.90rem" }} 
+        titleTypographyProps={{fontFamily:'"Unbounded",cursive', fontSize:"1.5rem"}}
       />
       <CardMedia
         component="img"
@@ -21,8 +27,14 @@ export default function Portfolio() {
         alt="Portfolio"
       />
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          HTML5, CSS3, Tailwind CSS, ReactJS, Material UI, Npm & sub-libraries, Netlify
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          theme={theme}
+          className="text-md font-thin"
+        >
+          HTML5, CSS3, Tailwind CSS, ReactJS, Material UI, Npm & sub-libraries,
+          Netlify
         </Typography>
       </CardContent>
     </Card>
