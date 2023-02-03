@@ -128,3 +128,22 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: #a2a2a2;
 }
+
+
+.animateFont-form {
+  animation: fadeInUp 500ms forwards;
+}
+
+.scrollBarStyle-TextArea{
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.scrollBarStyle-TextArea::-webkit-scrollbar{
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+.scrollBarStyle-TextArea::-webkit-scrollbar-thumb {
+  background-color: #a2a2a2;
+}
