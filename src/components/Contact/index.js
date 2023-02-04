@@ -3,14 +3,18 @@ import emailjs from "@emailjs/browser";
 import Alert from "@mui/material/Alert";
 import AlertTitle from "@mui/material/AlertTitle";
 import SocialMedia from "./socialMedia";
+import Backdrop from "@mui/material/Backdrop";
+import CircularProgress from "@mui/material/CircularProgress";
 
 function Contact() {
   const form = useRef();
   const [messageSent, setMessageSent] = useState(false);
   const [messageNotSent, setMessageNotSent] = useState(false);
+  const [loaderDisplay, setloaderDisplay] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setloaderDisplay(true);
 
     emailjs
       .sendForm(
@@ -23,13 +27,15 @@ function Contact() {
         () => {
           setMessageSent(true);
           setMessageNotSent(false);
+          setloaderDisplay(false);
+          e.target.reset();
         },
         (error) => {
           setMessageSent(false);
           setMessageNotSent(true);
+          setloaderDisplay(false);
         }
       );
-    e.target.reset();
   };
 
   return (
@@ -38,6 +44,13 @@ function Contact() {
         Contact:{" "}
       </h1>
       <h1 className="-mt-10 mb-2">____</h1>
+      <Backdrop
+          sx={{ color: "#ffd700", zIndex: (theme) => theme.zIndex.drawer + 1}}
+          open={loaderDisplay}
+          className ="sm:pl-56"
+        >
+          <CircularProgress color="inherit" />
+        </Backdrop>
       <div className="flex flex-col w-full h-auto animateFont-form items-center justify-center p-2">
         <form ref={form} onSubmit={sendEmail}>
           <ul className="flex flex-col w-full h-auto justify-center items-center">
@@ -113,6 +126,7 @@ function Contact() {
             </a>
           </Alert>
         ) : null}
+        
         <h1 className="text-3xl text-center mt-8">
           <span className="cardsSubtitleFont text-5xl m-1 text-pink-600 italic">
             Connect
