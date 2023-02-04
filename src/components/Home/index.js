@@ -1,4 +1,4 @@
-import SLetter from "../../assets/S.png";
+import SLetter from "../../assets/S.svg";
 import Logo from "../LogoHome";
 
 function Home() {

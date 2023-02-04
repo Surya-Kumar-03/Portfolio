@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Education from "./components/Education";
@@ -17,6 +17,7 @@ function App() {
         <Route path="/skills" element={<Skills></Skills>}></Route>
         <Route path="/contact_me" element={<Contact></Contact>}></Route>
         <Route path="/projects" element={<Projects></Projects>}></Route>
+        <Route path="*" element={<Navigate to="/" />} />
       </Route>
     </Routes>
   );
