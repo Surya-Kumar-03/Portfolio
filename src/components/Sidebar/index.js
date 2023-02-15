@@ -2,10 +2,29 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import { Icon } from "@iconify/react";
 import { useState, useEffect } from "react";
+import ImageLoader from "../Loader/loader";
+import { useLocation } from "react-router-dom";
 
 function SideBar() {
   //Check whether the device is Mobile or not
   const [width, setWidth] = useState(window.innerWidth);
+
+  //Location
+  const location = useLocation();
+  const [pageNo, setPageNo] = useState(1);
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setPageNo(1);
+    } else if (location.pathname === "/skills") {
+      setPageNo(2);
+    } else if (location.pathname === "/projects") {
+      setPageNo(3);
+    } else if (location.pathname === "/education") {
+      setPageNo(4);
+    } else if (location.pathname === "/contact_me") {
+      setPageNo(5);
+    }
+  }, [location]);
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
@@ -37,11 +56,17 @@ function SideBar() {
             icon="quill:hamburger"
           />
           <div className="flex flex-row flex-grow justify-center items-center">
-            <img
+            <ImageLoader
+              className="flex justify-center items-center w-16 mr-8 sm:mr-0 sm:w-56 h-[64px] sm:h-[224px] text-[#cdd5db] 
+              text-2xl font-thin"
+              src={logo}
+              alt="logo"
+            ></ImageLoader>
+            {/* <img
               src={logo}
               alt="logo"
               className="w-16 mr-8 sm:mr-0 sm:w-56"
-            ></img>
+            ></img> */}
           </div>
         </div>
         <nav className="flex flex-col justify-center ml-11 sm:ml-0">
@@ -51,7 +76,11 @@ function SideBar() {
                 exact="true"
                 activeclassname="active"
                 to="/"
-                className="sidebar-option"
+                className={
+                  pageNo === 1
+                    ? "sidebar-optionSelected sidebar-option"
+                    : "sidebar-option"
+                }
                 onClick={navbarOpen && showSidebar ? handleChange : null}
               >
                 <Icon
@@ -63,27 +92,15 @@ function SideBar() {
                 />
                 <h1 className="sidebar-text">Home</h1>
               </NavLink>
-              {/* <NavLink
-                exact="true"
-                activeclassname="active"
-                to="/experience"
-                className="sidebar-option"
-                onClick={navbarOpen && showSidebar ? handleChange : null}
-              >
-                <Icon
-                  icon="ic:round-work-history"
-                  color="#cfd5db"
-                  width="30"
-                  height="30"
-                  className="sidebar-icon"
-                />
-                <h1 className="sidebar-text">Experience</h1>
-              </NavLink> */}
               <NavLink
                 exact="true"
                 activeclassname="active"
                 to="/skills"
-                className="sidebar-option"
+                className={
+                  pageNo === 2
+                    ? "sidebar-optionSelected sidebar-option"
+                    : "sidebar-option"
+                }
                 onClick={navbarOpen && showSidebar ? handleChange : null}
               >
                 <Icon
@@ -99,7 +116,11 @@ function SideBar() {
                 exact="true"
                 activeclassname="active"
                 to="/projects"
-                className="sidebar-option"
+                className={
+                  pageNo === 3
+                    ? "sidebar-optionSelected sidebar-option"
+                    : "sidebar-option"
+                }
                 onClick={navbarOpen && showSidebar ? handleChange : null}
               >
                 <Icon
@@ -115,7 +136,11 @@ function SideBar() {
                 exact="true"
                 activeclassname="active"
                 to="/education"
-                className="sidebar-option"
+                className={
+                  pageNo === 4
+                    ? "sidebar-optionSelected sidebar-option"
+                    : "sidebar-option"
+                }
                 onClick={navbarOpen && showSidebar ? handleChange : null}
               >
                 <Icon
@@ -147,7 +172,11 @@ function SideBar() {
                 exact="true"
                 activeclassname="active"
                 to="/contact_me"
-                className="sidebar-option"
+                className={
+                  pageNo === 5
+                    ? "sidebar-optionSelected sidebar-option"
+                    : "sidebar-option"
+                }
                 onClick={navbarOpen && showSidebar ? handleChange : null}
               >
                 <Icon

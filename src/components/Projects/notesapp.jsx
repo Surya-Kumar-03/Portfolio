@@ -2,7 +2,6 @@ import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
@@ -12,10 +11,10 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Icon } from "@iconify/react";
 import notesApp from "../../assets/notesApp.svg";
 import { createTheme } from "@mui/system";
+import ImageLoader from "../Loader/loader";
 
 const theme = createTheme({
-  typography: {
-  },
+  typography: {},
 });
 
 const ExpandMore = styled((props) => {
@@ -37,21 +36,33 @@ export default function NotesApp() {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }} className="sm:mr-3 mt-3">
+    <Card sx={{ maxWidth: 345 }} className="">
       <CardHeader
         title="Notes-App"
         subheader="A simple notes web app for everyday productivity."
-        subheaderTypographyProps={{ fontFamily:'"Unbounded",cursive', fontSize:"0.90rem" }} 
-        titleTypographyProps={{fontFamily:'"Unbounded",cursive', fontSize:"1.5rem"}}
+        subheaderTypographyProps={{
+          fontFamily: '"Unbounded",cursive',
+          fontSize: "0.90rem",
+        }}
+        titleTypographyProps={{
+          fontFamily: '"Unbounded",cursive',
+          fontSize: "1.5rem",
+        }}
       />
-      <CardMedia
+      <ImageLoader
         component="img"
+        className="h-[216px] shadow-md rounded-sm m-2"
         height="194"
-        image={notesApp}
+        src={notesApp}
         alt="Notes-App"
-      />
+      ></ImageLoader>
       <CardContent>
-        <Typography variant="body2" color="text.secondary" theme={theme} className="text-md font-thin">
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          theme={theme}
+          className="text-md font-thin"
+        >
           HTML5, CSS3, ReactJS, Firebase
         </Typography>
       </CardContent>
@@ -76,7 +87,9 @@ export default function NotesApp() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent className="text-md font-thin">
-          <Typography paragraph theme={theme} className="font-medium">Description:</Typography>
+          <Typography paragraph theme={theme} className="font-medium">
+            Description:
+          </Typography>
           <Typography paragraph theme={theme}>
             A simple and responsive notes web app for everyday productivity and
             keeping track of ideas.
