@@ -60,7 +60,7 @@ function Contact() {
                   type="text"
                   name="name"
                   placeholder="Name"
-                  autocomplete="off"
+                  autoComplete="off"
                   className="w-full text-2xl bg-gray-200 rounded-md placeholder:text-2xl p-3 shadow-sm"
                   required
                 ></input>
@@ -70,7 +70,7 @@ function Contact() {
                   type="email"
                   name="email"
                   placeholder="E-mail"
-                  autocomplete="off"
+                  autoComplete="off"
                   className="w-full text-2xl bg-gray-200 rounded-md placeholder:text-2xl p-3 shadow-sm"
                   required
                 ></input>
@@ -81,7 +81,7 @@ function Contact() {
                 placeholder="Subject"
                 type="text"
                 name="subject"
-                autocomplete="off"
+                autoComplete="off"
                 className="w-full text-2xl bg-gray-200 rounded-md placeholder:text-2xl p-3 shadow-sm"
                 required
               ></input>
@@ -90,7 +90,7 @@ function Contact() {
               <textarea
                 placeholder="Message"
                 name="message"
-                autocomplete="off"
+                autoComplete="off"
                 className="w-full h-56 text-2xl bg-gray-200 rounded-md placeholder:text-2xl
                  p-5 shadow-sm resize-none scrollBarStyle-TextArea"
                 required

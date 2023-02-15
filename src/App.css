@@ -17,18 +17,16 @@ body {
 }
 
 .sidebar-text {
-  @apply text-2xl font-thin sm:text-gray-300 cursor-pointer duration-200;
-}
-
-@media (max-width: 642px) {
-  .sidebar-text {
-    color: #fff;
-    text-shadow: 0 0 5px #03e8f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
-      0 0 100px #03e9f4;
-  }
+  @apply text-2xl font-thin text-gray-300 cursor-pointer duration-200;
 }
 
 .sidebar-option:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.sidebar-optionSelected {
   color: #fff;
   text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
     0 0 100px #03e9f4;
@@ -52,7 +50,6 @@ body {
 .schar-style {
   animation: swing;
   animation-duration: 2s;
-  animation-delay: 100ms;
 }
 
 .schar-style {
