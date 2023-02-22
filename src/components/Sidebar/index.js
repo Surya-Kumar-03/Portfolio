@@ -39,8 +39,10 @@ function SideBar() {
 
   // Bool to check whether Navbar Open or Closed
   const [navbarOpen, setNavbarOpen] = useState(!showSidebar);
+  const [hamburger, setHamburger] = useState(true);
   function handleChange() {
     setNavbarOpen(!navbarOpen);
+    setHamburger(!hamburger);
   }
 
   return (
@@ -50,11 +52,19 @@ function SideBar() {
         className="flex flex-col items-center pb-4 sm:pb-2 w-screen sm:w-56 h-auto sm:h-screen bg-gray-700 sm:fixed z-10"
       >
         <div className="flex flex-row w-full items-center justify-start">
-          <Icon
-            onClick={handleChange}
-            className="text-white h-9 w-9 rounded-md ml-3 sm:hidden animateHamburger"
-            icon="quill:hamburger"
-          />
+          {hamburger ? (
+            <Icon
+              onClick={handleChange}
+              className="text-white h-9 w-9 rounded-md ml-3 sm:hidden animateHamburger"
+              icon="quill:hamburger"
+            />
+          ) : (
+            <Icon
+              onClick={handleChange}
+              className="text-white h-9 w-9 rounded-md ml-3 sm:hidden animateHamburger"
+              icon="radix-icons:cross-2"
+            />
+          )}
           <div className="flex flex-row flex-grow justify-center items-center">
             <ImageLoader
               className="flex justify-center items-center w-16 mr-8 sm:mr-0 sm:w-56 h-[64px] sm:h-[224px] text-[#cdd5db] 
