@@ -36,7 +36,7 @@ export default function PropertyMan() {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }} className="animateCardsProjects">
+    <Card sx={{ maxWidth: 345 }} className="animateCardsProjects border border-gray-300">
       <CardHeader
         title="Property Booking System"
         subheader="This project was developed for a hackathon within a time frame of 6 hours."
@@ -51,7 +51,7 @@ export default function PropertyMan() {
       />
       <ImageLoader
         component="img"
-        className="h-[216px] shadow-md rounded-sm m-2"
+        className="h-[216px] shadow-md rounded-md m-2 border border-gray-300"
         height="194"
         src={property}
         alt="Property Booking System"

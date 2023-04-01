@@ -8,7 +8,7 @@ import ImageLoader from "../Loader/loader";
 export default function MediaCard() {
   return (
     <div className="lg:hover:scale-105 transition-all">
-      <Card sx={{ maxWidth: 345 }} className="animateCards m-2">
+      <Card sx={{ maxWidth: 345 }} className="animateCards m-2 border border-gray-400">
         <ImageLoader
           component="img"
           className="h-[329px] shadow-md rounded-sm m-2"

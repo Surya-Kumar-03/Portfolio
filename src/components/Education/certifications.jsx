@@ -10,6 +10,7 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import googleCloud from "../../assets/googleCloud.svg";
+import brainBusters from "../../assets/brainBusters.svg";
 import ImageLoader from "../Loader/loader";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
@@ -25,6 +26,11 @@ const images = [
     label: "Google Cloud Engineer Fundamentals",
     provider: "- Google Cloud Skills Boost",
     imgPath: googleCloud,
+  },
+  {
+    label: "Brain Busters - ACM SIST",
+    provider: "Technical Quiz Winner",
+    imgPath: brainBusters,
   },
 ];
 
@@ -65,7 +71,9 @@ function SwipeableTextMobileStepper() {
           >
             {images[activeStep].label}
           </Typography>
-          <p className="font-thin text-2xl text-center">{images[activeStep].provider}</p>
+          <p className="font-thin text-2xl text-center">
+            {images[activeStep].provider}
+          </p>
         </div>
       </Paper>
       <AutoPlaySwipeableViews

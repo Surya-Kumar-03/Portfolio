@@ -17,7 +17,7 @@ function Education() {
           Few of my{" "}
           <br></br>
           <span className="cardsSubtitleFont text-5xl m-1 text-pink-600 italic">
-            Certifications
+            Accolades
           </span>{" "}
           ..
         </h1>

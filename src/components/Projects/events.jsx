@@ -3,20 +3,21 @@ import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import portfolio from "../../assets/portfolio.svg";
+import events from "../../assets/events.svg";
 import { createTheme } from "@mui/system";
 import ImageLoader from "../Loader/loader";
 
 const theme = createTheme({
-  typography: {},
+  typography: {
+  },
 });
 
-export default function Portfolio() {
+export default function EventsSathyabama() {
   return (
     <Card sx={{ maxWidth: 345 }} className="animateCardsProjects border border-gray-300">
       <CardHeader
-        title="Personal Portfolio"
-        subheader="The website you are currently on!"
+        title="Events@Sathyabama"
+        subheader="A Event Management System to effortlessly manage all college events."
         subheaderTypographyProps={{ fontFamily:'"Unbounded",cursive', fontSize:"0.90rem" }} 
         titleTypographyProps={{fontFamily:'"Unbounded",cursive', fontSize:"1.5rem"}}
       />
@@ -24,18 +25,12 @@ export default function Portfolio() {
         component="img"
         className="h-[216px] shadow-md rounded-md m-2 border border-gray-300"
         height="194"
-        src={portfolio}
-        alt="Portfolio"
+        src={events}
+        alt="Events@Sathyabama"
       ></ImageLoader>
       <CardContent>
-        <Typography
-          variant="body2"
-          color="text.secondary"
-          theme={theme}
-          className="text-md font-thin"
-        >
-          HTML5, CSS3, Tailwind CSS, ReactJS, Material UI, Npm & sub-libraries,
-          Netlify
+        <Typography variant="body2" color="text.secondary" theme={theme} className="text-md font-thin">
+          HTML5, CSS3, Material UI, NextJS, ReactJS,
         </Typography>
       </CardContent>
     </Card>

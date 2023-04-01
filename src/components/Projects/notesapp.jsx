@@ -36,7 +36,7 @@ export default function NotesApp() {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }} className="">
+    <Card sx={{ maxWidth: 345 }} className="border border-gray-300">
       <CardHeader
         title="Notes-App"
         subheader="A simple notes web app for everyday productivity."
@@ -51,7 +51,7 @@ export default function NotesApp() {
       />
       <ImageLoader
         component="img"
-        className="h-[216px] shadow-md rounded-sm m-2"
+        className="h-[216px] shadow-md rounded-md m-2 border border-gray-300"
         height="194"
         src={notesApp}
         alt="Notes-App"

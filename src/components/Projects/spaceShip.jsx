@@ -37,7 +37,7 @@ export default function SpaceShip() {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }} className="animateCardsProjects">
+    <Card sx={{ maxWidth: 345 }} className="animateCardsProjects border border-gray-300">
       <CardHeader
         title="Space-Ship Model"
         subheader="A cross-domain (Web-ML) application that predicts an astronaut's survival rate."
@@ -46,7 +46,7 @@ export default function SpaceShip() {
       />
       <ImageLoader
         component="img"
-        className="h-[216px] shadow-md rounded-sm m-2"
+        className="h-[216px] shadow-md rounded-md m-2 border border-gray-300"
         height="194"
         src={spaceShip}
         alt="Space-Ship"
