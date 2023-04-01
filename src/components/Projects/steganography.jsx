@@ -37,7 +37,7 @@ export default function Steganography() {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }} className="animateCardsProjects">
+    <Card sx={{ maxWidth: 345 }} className="animateCardsProjects border border-gray-300">
       <CardHeader
         title="Steganography Implementation"
         subheader="A basic implementation of the idea of steganography."
@@ -46,7 +46,7 @@ export default function Steganography() {
       />
       <ImageLoader
         component="img"
-        className="h-[216px] shadow-md rounded-sm m-2"
+        className="h-[216px] shadow-md rounded-md m-2 border border-gray-300"
         height="194"
         src={steganography}
         alt="Steganography"

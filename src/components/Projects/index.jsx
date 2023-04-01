@@ -4,6 +4,7 @@ import SpaceShip from "./spaceShip";
 import Steganography from "./steganography";
 import NotesApp from "./notesapp";
 import PropertyMan from "./propertyMan";
+import EventsSathyabama from "./events";
 
 function Projects() {
   return (
@@ -13,15 +14,18 @@ function Projects() {
       </h1>
       <h1 className="-mt-10 mb-2">____</h1>
       <div className="flex flex-col gap-3 mt-3 mb-3 lg:flex lg:flex-row">
+        <EventsSathyabama></EventsSathyabama>
         <Portfolio></Portfolio>
-        <QuickQuizizz></QuickQuizizz>
       </div>
       <div className="flex flex-col gap-3 mb-3 lg:flex lg:flex-row">
+        <QuickQuizizz></QuickQuizizz>
         <PropertyMan></PropertyMan>
+      </div>
+      <div className="flex flex-col gap-3 lg:flex lg:flex-row mb-3">
         <SpaceShip></SpaceShip>
+        <Steganography></Steganography>
       </div>
       <div className="flex flex-col gap-3 lg:flex lg:flex-row mb-6">
-        <Steganography></Steganography>
         <NotesApp></NotesApp>
       </div>
     </div>

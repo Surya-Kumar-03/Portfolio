@@ -37,7 +37,7 @@ export default function QuickQuizizz() {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }} className="animateCardsProjects">
+    <Card sx={{ maxWidth: 345 }} className="animateCardsProjects border border-gray-300">
       <CardHeader
         title="Quick-Quizizz"
         subheader="A responsive online web-based quiz-app with timer."
@@ -46,7 +46,7 @@ export default function QuickQuizizz() {
       />
       <ImageLoader
         component="img"
-        className="h-[216px] shadow-md rounded-sm m-2"
+        className="h-[216px] shadow-md rounded-md m-2 border border-gray-300"
         height="194"
         src={quickQuizizz}
         alt="Quick-Quizizz"
