@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SLetter from "../../assets/S.svg";
+import SLetter from "../../assets/S.png";
 import Logo from "../LogoHome";
 
 function Home() {
@@ -17,7 +17,7 @@ function Home() {
         <h1 className="flex flex-row items-end mt-2 mb-2">
           <img
             src={SLetter}
-            alt="Surya"
+            alt=""
             className="schar-style"
             onLoad={handleChange}
           ></img>
