@@ -3,6 +3,7 @@ import logo from "../../assets/logo.png";
 import { Icon } from "@iconify/react";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import ImageLoader from "../Loader/loader";
 
 function SideBar() {
   //Check whether the device is Mobile or not
@@ -65,7 +66,14 @@ function SideBar() {
             />
           )}
           <div className="flex flex-row flex-grow justify-center items-center">
-            <img src={logo} alt="" className="w-16 mr-8 sm:mr-0 sm:w-56"></img>
+            <ImageLoader
+              className="flex justify-center items-center w-16 mr-8 mt-1 sm:mt-0 sm:mr-0 sm:w-56 h-[64px] sm:h-[224px] text-[#cdd5db] 
+              text-2xl font-thin"
+              src={logo}
+              alt="logo"
+            >
+              <div class="h-[20px] sm:h-[100px] bg-gray-600 rounded-full w-24 sm:w-44 animate-bounce"></div>
+            </ImageLoader>
           </div>
         </div>
         <nav className="flex flex-col justify-center ml-11 sm:ml-0">
