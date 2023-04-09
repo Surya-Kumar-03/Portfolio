@@ -8,7 +8,7 @@ export default function CardEdu({ src, alt, course, duration, location }) {
   return (
     <Card
       sx={{ maxWidth: 345, boxShadow: "1" }}
-      className="animateCards m-1 border border-gray-400"
+      className="animateCards m-2 border border-gray-400"
     >
       <ImageLoader
         component="img"
