@@ -19,7 +19,7 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: "The Complete Web Development Bootcamp (2023)",
+    label: "The Complete 2023 Web Development Bootcamp",
     provider: "- Udemy",
     imgPath: udemyCert,
   },
@@ -29,7 +29,7 @@ const images = [
     imgPath: googleCloud,
   },
   {
-    label: "Database Management System (DBMS)",
+    label: "Database Management System",
     provider: "- NPTEL",
     imgPath: dbms,
   },
@@ -69,7 +69,7 @@ function SwipeableTextMobileStepper() {
           bgcolor: "background.default",
         }}
       >
-        <div className="flex flex-col h-48 w-full justify-center items-center">
+        <div className="flex flex-col h-56 w-full justify-center items-center overflow-hidden">
           <Typography
             className="text-center w-80 sm:w-96 p-1"
             sx={{ fontSize: "1.5rem", fontFamily: "Unbounded, cursive" }}

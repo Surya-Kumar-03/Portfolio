@@ -2,7 +2,6 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { Icon } from "@iconify/react";
 import { useState, useEffect } from "react";
-import ImageLoader from "../Loader/loader";
 import { useLocation } from "react-router-dom";
 
 function SideBar() {
@@ -66,14 +65,7 @@ function SideBar() {
             />
           )}
           <div className="flex flex-row flex-grow justify-center items-center">
-            <ImageLoader
-              className="flex justify-center items-center w-16 mr-8 mt-1 sm:mt-0 sm:mr-0 sm:w-56 h-[64px] sm:h-[224px] text-[#cdd5db] 
-              text-2xl font-thin"
-              src={logo}
-              alt="logo"
-            >
-              <div class="h-[64px] sm:h-[160px] bg-gray-200 rounded-md w-16 sm:w-44 animate-pulse"></div>
-            </ImageLoader>
+            <img src={logo} alt="" className="w-16 mr-8 sm:mr-0 sm:w-56"></img>
           </div>
         </div>
         <nav className="flex flex-col justify-center ml-11 sm:ml-0">
