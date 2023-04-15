@@ -10,9 +10,9 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import googleCloud from "../../assets/googleCloud.svg";
-import brainBusters from "../../assets/brainBusters.avif";
-import udemyCert from "../../assets/udemyCert.avif";
-import dbms from "../../assets/dbms.avif";
+import brainBusters from "../../assets/brainBusters.webp";
+import udemyCert from "../../assets/udemyCert.webp";
+import dbms from "../../assets/dbms.webp";
 import ImageLoader from "../Loader/loader";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
@@ -58,7 +58,7 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-    <Box sx={{ maxWidth: 500, flexGrow: 1 }} className="shadow-lg m-2 mt-0">
+    <Box sx={{ maxWidth: 500, flexGrow: 1 }} className="shadow-lg m-2 mt-0 border border-gray-300 rounded-sm">
       <Paper
         elevation={0}
         sx={{
