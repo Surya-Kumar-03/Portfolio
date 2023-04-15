@@ -1,7 +1,8 @@
 import CardEdu from "./CardEdu";
-import SathyabamaImg from "../../assets/Sathyabama.avif";
-import SdaImg from "../../assets/Sda.avif";
+import SathyabamaImg from "../../assets/Sathyabama.webp";
+import SdaImg from "../../assets/Sda.webp";
 import CertificationCarousel from "./certifications";
+import BackTop from "../../backTop";
 
 function Education() {
   return (
@@ -36,6 +37,11 @@ function Education() {
         </h1>
         <CertificationCarousel></CertificationCarousel>
       </div>
+      <BackTop>
+        <button className="bg-white p-2 sm:hidden rounded-lg border cursor-pointer border-gray-500 shadow-md opacity-95 select-none">
+          Back to Top
+        </button>
+      </BackTop>
     </div>
   );
 }

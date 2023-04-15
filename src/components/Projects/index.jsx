@@ -1,11 +1,12 @@
-import quickQuizizz from "../../assets/quickquizizz.avif";
-import events from "../../assets/events.avif";
-import portfolio from "../../assets/portfolio.avif";
-import property from "../../assets/property.avif";
-import spaceShip from "../../assets/spaceShip.avif";
-import steganography from "../../assets/steganography.avif";
-import notesApp from "../../assets/notesApp.avif";
+import quickQuizizz from "../../assets/quickquizizz.webp";
+import events from "../../assets/events.webp";
+import portfolio from "../../assets/portfolio.webp";
+import property from "../../assets/property.webp";
+import spaceShip from "../../assets/spaceShip.webp";
+import steganography from "../../assets/steganography.webp";
+import notesApp from "../../assets/notesApp.webp";
 import CardProj from "./CardProj";
+import BackTop from "../../backTop";
 
 const projects = [
   {
@@ -94,6 +95,11 @@ function Projects() {
           />
         ))}
       </div>
+      <BackTop>
+        <button className="bg-white p-2 sm:hidden rounded-lg border cursor-pointer border-gray-500 shadow-md opacity-95 select-none">
+          Back to Top
+        </button>
+      </BackTop>
     </div>
   );
 }

@@ -85,11 +85,11 @@ body {
 }
 
 .animateHeading {
-  animation: bounce 1.5s forwards;
+  animation: flipInX 2s forwards;
 }
 
 .animateCards {
-  animation: flipInX 500ms forwards;
+  animation: backInUp 500ms forwards;
 }
 
 .cardsFontChanger {
@@ -126,17 +126,16 @@ body::-webkit-scrollbar-thumb {
   background-color: #a2a2a2;
 }
 
-
 .animateFont-form {
   animation: rollIn 500ms forwards;
 }
 
-.scrollBarStyle-TextArea{
+.scrollBarStyle-TextArea {
   overflow: auto;
   overflow-x: hidden;
 }
 
-.scrollBarStyle-TextArea::-webkit-scrollbar{
+.scrollBarStyle-TextArea::-webkit-scrollbar {
   width: 8px;
   background-color: #f5f5f5;
 }
@@ -145,10 +144,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #a2a2a2;
 }
 
-.contactSocial{
+.contactSocial {
   animation: bounceIn 2s forwards;
 }
 
-.animateCardsProjects{
+.animateCardsProjects {
   animation: fadeInUp 1s forwards;
 }

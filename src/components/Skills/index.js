@@ -3,10 +3,14 @@ import PLanguages from "./PLanguages";
 import SkillsSphere from "./skillsSphere";
 import CloudPlatforms from "./CloudPlatforms";
 import DevTools from "./DevTools";
+import BackTop from "../../backTop";
 
 function Skills() {
   return (
-    <div className="flex flex-col flex-grow justify-center items-center m-4 overflow-hidden sm:ml-60">
+    <div
+      id="back-to-top-anchor"
+      className="flex flex-col flex-grow justify-center items-center m-4 overflow-hidden sm:ml-60"
+    >
       <h1 className="text-styling text-5xl m-4 mt-0 animateSkillsHeading">
         Skills:{" "}
       </h1>
@@ -50,6 +54,11 @@ function Skills() {
           <DevTools></DevTools>
         </div>
       </div>
+      <BackTop>
+        <button className="bg-white p-2 sm:hidden rounded-lg border cursor-pointer border-gray-500 shadow-md opacity-95 select-none">
+          Back to Top
+        </button>
+      </BackTop>
     </div>
   );
 }

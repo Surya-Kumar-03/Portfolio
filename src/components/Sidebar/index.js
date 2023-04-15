@@ -66,14 +66,16 @@ function SideBar() {
             />
           )}
           <div className="flex flex-row flex-grow justify-center items-center">
-            <ImageLoader
-              className="flex justify-center items-center w-16 mr-8 mt-1 sm:mt-0 sm:mr-0 sm:w-56 h-[64px] sm:h-[224px] text-[#cdd5db] 
+            <NavLink to="/">
+              <ImageLoader
+                className="flex justify-center items-center w-16 mr-8 mt-1 sm:mt-0 sm:mr-0 sm:w-56 h-[64px] sm:h-[224px] text-[#cdd5db] 
               text-2xl font-thin"
-              src={logo}
-              alt="logo"
-            >
-              <div class="h-[20px] sm:h-[100px] bg-gray-600 rounded-full w-24 sm:w-44 animate-bounce"></div>
-            </ImageLoader>
+                src={logo}
+                alt="logo"
+              >
+                <div class="h-[20px] sm:h-[100px] bg-[#374151] rounded-full w-24 sm:w-44"></div>
+              </ImageLoader>
+            </NavLink>
           </div>
         </div>
         <nav className="flex flex-col justify-center ml-11 sm:ml-0">
