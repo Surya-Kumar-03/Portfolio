@@ -14,12 +14,14 @@ const projects = [
     subheader:
       "A Event Management System to effortlessly manage all college events.",
     src: events,
+    github: "https://github.com/Surya-Kumar-03/Event-Management",
     tech: "HTML5, CSS3, Material UI, Tailwind CSS, NextJS, ReactJS, Django, Django REST Framework, MySQL",
   },
   {
     title: "Personal Portfolio",
     subheader: "The website you are currently on!",
     src: portfolio,
+    github: "https://github.com/Surya-Kumar-03/Portfolio",
     tech: "HTML5, CSS3, Tailwind CSS, ReactJS, Material UI, Npm & sub-libraries, Netlify",
   },
   {
