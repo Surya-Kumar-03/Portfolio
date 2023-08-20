@@ -17,17 +17,20 @@ const SkillsSphere = () => (
       "HTML5",
       "CSS3",
       "Tailwind CSS",
-      "Bootstrap5",
-      "Javascript ES6",
-      "jQuery",
+      "JavaScript",
       "ReactJS",
+      "Redux",
       "NextJS",
       "TypeScript",
       "Material UI",
       "NodeJS",
+      ".NET Core",
       "ExpressJS",
       "MongoDB",
       "Mongoose",
+      "Entity",
+      "Firebase",
+      "SQL Server",
     ]}
   </TagCloud>
 );

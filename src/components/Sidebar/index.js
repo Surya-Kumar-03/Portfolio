@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { Icon } from "@iconify/react";
 import { useState, useEffect } from "react";
@@ -203,46 +203,30 @@ function SideBar() {
         <div className="flex flex-row h-max sm:h-screen items-start sm:items-end ">
           {navbarOpen ? (
             <>
-              <Link
-                onClick={() =>
-                  window.open(
-                    "https://www.linkedin.com/in/bandepalli-surya/",
-                    "_blank"
-                  )
-                }
+              <a
+                href="https://www.linkedin.com/in/bandepalli-surya/"
+                target="__blank"
               >
                 <Icon icon="mdi:linkedin" className="sidebar-profileIcon" />
-              </Link>
-              <Link
-                onClick={() =>
-                  window.open("https://github.com/Surya-Kumar-03", "_blank")
-                }
-              >
+              </a>
+              <a href="https://github.com/Surya-Kumar-03" target="__blank">
                 <Icon
                   icon="carbon:logo-github"
                   className="sidebar-profileIcon"
                 />
-              </Link>
-              <Link
-                onClick={() =>
-                  window.open("https://leetcode.com/bsuryakumar03/", "_blank")
-                }
-              >
+              </a>
+              <a href="https://leetcode.com/bsuryakumar03/" target="__blank">
                 <Icon icon="cib:leetcode" className="sidebar-profileIcon" />
-              </Link>
-              <Link
-                onClick={() =>
-                  window.open(
-                    "https://auth.geeksforgeeks.org/user/bsuryakumar03/practice/",
-                    "_blank"
-                  )
-                }
+              </a>
+              <a
+                href="https://auth.geeksforgeeks.org/user/bsuryakumar03/practice/"
+                target="__blank"
               >
                 <Icon
                   icon="simple-icons:geeksforgeeks"
                   className="sidebar-profileIcon"
                 />
-              </Link>
+              </a>
             </>
           ) : null}
         </div>

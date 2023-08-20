@@ -5,6 +5,7 @@ import property from "../../assets/property.webp";
 import spaceShip from "../../assets/spaceShip.webp";
 import steganography from "../../assets/steganography.webp";
 import notesApp from "../../assets/notesApp.webp";
+import MusicWebApp from "../../assets/MusicWebApp.png";
 import CardProj from "./CardProj";
 import BackTop from "../../backTop";
 
@@ -22,6 +23,7 @@ const projects = [
     subheader: "The website you are currently on!",
     src: portfolio,
     github: "https://github.com/Surya-Kumar-03/Portfolio",
+    live: "https://bandepalli-surya.netlify.app/",
     tech: "HTML5, CSS3, Tailwind CSS, ReactJS, Material UI, Npm & sub-libraries, Netlify",
   },
   {
@@ -65,6 +67,14 @@ const projects = [
     live: "https://aryanamish.github.io/Steganography/",
     description:
       "Steganography is the practice of hiding information within other seemingly innocent media. This can include hiding a message within an image, audio file, or even other text. The goal of steganography is to conceal the existence of the message, rather than encrypting it, making it more difficult to detect. This project is a basic implementation of the idea of steganography.",
+  },
+  {
+    title: "Music-Web-App",
+    subheader:
+      "This project was designed for a hackathon, incorporating song streaming capabilities and secure authentication.",
+    src: MusicWebApp,
+    tech: "HTML5, CSS3, ReactJS, MongoDB, Firebase Cloud Storage, NodeJS",
+    github: "https://github.com/Surya-Kumar-03/Music-WebApp",
   },
   {
     title: "Notes-App",

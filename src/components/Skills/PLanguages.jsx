@@ -23,6 +23,12 @@ function PLanguages() {
         className="mr-2 sm:hover:scale-110 transition-all"
       />
       <Icon
+        icon="vscode-icons:file-type-csharp2"
+        width="60"
+        height="60"
+        className="sm:hover:scale-110 transition-all"
+      />
+      <Icon
         icon="logos:python"
         width="45"
         height="50"

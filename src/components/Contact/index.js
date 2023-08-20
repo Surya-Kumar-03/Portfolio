@@ -41,16 +41,16 @@ function Contact() {
   return (
     <div className="flex flex-col min-h-[85vh] sm:min-h-screen justify-center items-center sm:ml-56 w-full">
       <h1 className="text-styling text-5xl m-4 mt-4 animateSkillsHeading">
-        Contact:{" "}
+        Contact Me:{" "}
       </h1>
       <h1 className="-mt-10 mb-2">____</h1>
       <Backdrop
-          sx={{ color: "#ffd700", zIndex: (theme) => theme.zIndex.drawer + 1}}
-          open={loaderDisplay}
-          className ="sm:pl-56"
-        >
-          <CircularProgress color="inherit" />
-        </Backdrop>
+        sx={{ color: "#ffd700", zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open={loaderDisplay}
+        className="sm:pl-56"
+      >
+        <CircularProgress color="inherit" />
+      </Backdrop>
       <div className="flex flex-col w-full h-auto animateFont-form items-center justify-center p-2">
         <form ref={form} onSubmit={sendEmail}>
           <ul className="flex flex-col w-full h-auto justify-center items-center">
@@ -126,7 +126,7 @@ function Contact() {
             </a>
           </Alert>
         ) : null}
-        
+
         <h1 className="text-3xl text-center mt-8">
           <span className="cardsSubtitleFont text-5xl m-1 text-pink-600 italic">
             Connect

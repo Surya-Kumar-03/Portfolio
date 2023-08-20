@@ -38,7 +38,7 @@ function Skills() {
         <div className="flex flex-col w-full mt-2 mr-2 bg-red-100 rounded-xl p-2">
           <h1 className="text-3xl text-center animateFont-after">
             <span className="cardsSubtitleFont text-5xl m-1 text-pink-600 italic">
-              Cloud platforms
+              Cloud platforms 
             </span>{" "}
             I am familiar with..
           </h1>

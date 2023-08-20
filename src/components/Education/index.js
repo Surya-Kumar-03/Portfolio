@@ -11,7 +11,7 @@ function Education() {
         Education:{" "}
       </h1>
       <h1 className="-mt-10 mb-2">____</h1>
-      <div className="lg:flex lg:flex-row">
+      <div className="flex flex-col lg:flex-row gap-1">
         <CardEdu
           src={SathyabamaImg}
           alt="Sathyabama University"
@@ -28,12 +28,10 @@ function Education() {
         ></CardEdu>
       </div>
       <div className="flex flex-col justify-center items-center rounded-xl mt-4 mb-4 p-1 sm:p-4 bg-yellow-50 mx-5">
-        <h1 className="text-3xl text-center animateSkillsHeading">
-          Few of my <br></br>
+        <h1 className="text-3xl text-center animateSkillsHeading my-3">
           <span className="cardsSubtitleFont text-5xl text-pink-600 italic">
             Accolades
           </span>{" "}
-          ..
         </h1>
         <CertificationCarousel></CertificationCarousel>
       </div>

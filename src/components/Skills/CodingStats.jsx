@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const CodingStats = () => {
-  const totalSolved = 320; //Hardcoded Question Count Here
+  const totalSolved = 400; //Hardcoded Question Count Here
   const [displayedValue, setDisplayedValue] = useState(0);
 
   useEffect(() => {
@@ -20,16 +20,18 @@ const CodingStats = () => {
 
   return (
     <div
-      className="flex flex-col lg:flex-row w-full text-4xl font-light items-center justify-center
+      className="flex flex-col w-full text-4xl font-light items-center justify-center
     bg-gray-100 p-2 rounded-xl lg:bg-none -mt-4 sm:mt-9 animateFont-after"
     >
-      <h1 className="flex flex-row w-24 h-[70%] items-center justify-center font-medium pt-1 text-pink-600">
-        {displayedValue}+
-      </h1>
-      <div className="flex flex-col lg:flex-row items-center justify-center">
+      <div className="flex flex-col lg:flex-row lg:gap-3 w-full justify-center items-center">
+        <h1 className="flex flex-row w-24 h-[70%] items-center justify-center font-medium pt-1 text-pink-600">
+          {displayedValue}+
+        </h1>
         <span className="cardsSubtitleFont text-5xl text-pink-600 italic m-3 mb-1 mt-2">
           problems
         </span>{" "}
+      </div>
+      <div className="flex flex-col xl:flex-row items-center justify-center">
         solved on{" "}
         <a
           href="https://leetcode.com/bsuryakumar03/"

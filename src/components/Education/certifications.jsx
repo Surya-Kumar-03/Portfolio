@@ -12,12 +12,28 @@ import { autoPlay } from "react-swipeable-views-utils";
 import googleCloud from "../../assets/googleCloud.svg";
 import brainBusters from "../../assets/brainBusters.webp";
 import udemyCert from "../../assets/udemyCert.webp";
+import hclCert from "../../assets/HCLCertificate.webp";
 import dbms from "../../assets/dbms.webp";
 import ImageLoader from "../Loader/loader";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
+  {
+    label: "Internship Completion Certificate",
+    provider: "- HCL Technologies",
+    imgPath: hclCert,
+  },
+  {
+    label: "Brain Busters (Winner)",
+    provider: "- ACM SIST",
+    imgPath: brainBusters,
+  },
+  {
+    label: "Database Management System",
+    provider: "- NPTEL",
+    imgPath: dbms,
+  },
   {
     label: "The Complete 2023 Web Development Bootcamp",
     provider: "- Udemy",
@@ -27,16 +43,6 @@ const images = [
     label: "Google Cloud Engineer Fundamentals",
     provider: "- Google Cloud Skills Boost",
     imgPath: googleCloud,
-  },
-  {
-    label: "Database Management System",
-    provider: "- NPTEL",
-    imgPath: dbms,
-  },
-  {
-    label: "Brain Busters (Winner)",
-    provider: "- ACM SIST",
-    imgPath: brainBusters,
   },
 ];
 
@@ -58,7 +64,10 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-    <Box sx={{ maxWidth: 500, flexGrow: 1 }} className="shadow-lg m-2 mt-0 border border-gray-300 rounded-sm">
+    <Box
+      sx={{ maxWidth: 500, flexGrow: 1 }}
+      className="shadow-lg m-2 mt-0 border border-gray-300 rounded-sm"
+    >
       <Paper
         elevation={0}
         sx={{
