@@ -28,7 +28,8 @@ const ExpandMore = styled((props) => {
 }));
 
 export default function CardProj(props) {
-  const { title, subheader, src, tech, description, github, live } = props;
+  const { title, subheader, src, tech, description, github, live, prod } =
+    props;
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -99,6 +100,17 @@ export default function CardProj(props) {
             <IconButton aria-label="Live">
               <a href={live} target="_blank" rel="noreferrer">
                 <Icon icon="fluent-mdl2:website" width="40" height="40" />
+              </a>
+            </IconButton>
+          )}
+          {prod && (
+            <IconButton aria-label="Live">
+              <a href={prod} target="_blank" rel="noreferrer">
+                <Icon
+                  icon="fluent:production-checkmark-20-regular"
+                  width="40"
+                  height="40"
+                />
               </a>
             </IconButton>
           )}

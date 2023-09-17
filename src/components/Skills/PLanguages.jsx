@@ -23,6 +23,12 @@ function PLanguages() {
         className="mr-2 sm:hover:scale-110 transition-all"
       />
       <Icon
+        icon="tabler:file-type-sql"
+        width="55"
+        height="55"
+        className="sm:hover:scale-110 transition-all text-blue-500"
+      />
+      <Icon
         icon="vscode-icons:file-type-csharp2"
         width="60"
         height="60"

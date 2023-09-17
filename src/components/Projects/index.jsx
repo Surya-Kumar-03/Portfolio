@@ -8,6 +8,7 @@ import notesApp from "../../assets/notesApp.webp";
 import MusicWebApp from "../../assets/MusicWebApp.png";
 import CardProj from "./CardProj";
 import BackTop from "../../backTop";
+import Gfg from "../../assets/gfg.png";
 
 const projects = [
   {
@@ -15,8 +16,12 @@ const projects = [
     subheader:
       "A Event Management System to effortlessly manage all college events.",
     src: events,
-    github: "https://github.com/Surya-Kumar-03/Event-Management",
-    tech: "HTML5, CSS3, Material UI, Tailwind CSS, NextJS, ReactJS, Django, Django REST Framework, MySQL",
+    github: "https://github.com/Events-Sathyabama/Events-Sathyabama",
+    live: "https://events-sathyabama-production.up.railway.app/",
+    tech: "HTML5, CSS3, Material UI, Tailwind CSS, NextJS, ReactJS, Django, Django REST Framework, MySQL, Vercel, Railway",
+    prod: "https://events-sathyabama.vercel.app/",
+    description:
+      "Events@Sathyabama is a web-based application that simplifies the process of managing events within a college campus.",
   },
   {
     title: "Personal Portfolio",
@@ -27,6 +32,15 @@ const projects = [
     tech: "HTML5, CSS3, Tailwind CSS, ReactJS, Material UI, Npm & sub-libraries, Netlify",
   },
   {
+    title: "GFG Code Formatter",
+    subheader:
+      "Browser Extension to enhance code readability with code formatting on GeeksforGeeks Practise Platform.",
+    src: Gfg,
+    github: "https://github.com/Surya-Kumar-03/GFG-Code-Formatter",
+    tech: "JavaScript Injection, DOM Manipulation, Parsers, HTML, CSS",
+    prod: "https://microsoftedge.microsoft.com/addons/detail/geeksforgeeks-code-format/ekjbfkjlafjaegpnbdgkheflepldlgfb",
+  },
+  {
     title: "Quick-Quizizz",
     subheader: "A responsive online web-based quiz-app with timer.",
     src: quickQuizizz,
@@ -34,7 +48,7 @@ const projects = [
     github: "https://github.com/Surya-Kumar-03/Quick-Quizizz",
     live: "https://lazy-erin-seahorse-tux.cyclic.app/",
     description:
-      "A responsive and user-friendly full-stack quiz web app for students to assess themselves and gain knowledge. Teachers can add, change or delete questions as needed (CRUD Operations) and view students’ results.",
+      "A responsive quiz web app with CRUD functionality offering real-time answer assessment, scoring and proctoring.",
   },
   {
     title: "Property Booking System",
@@ -80,7 +94,7 @@ const projects = [
     title: "Notes-App",
     subheader: "A simple notes web app for everyday productivity.",
     src: notesApp,
-    tech: "HTML5, CSS3, ReactJS",
+    tech: "HTML5, CSS3, ReactJS, Firebase",
     github: "https://github.com/Surya-Kumar-03/Notes-App",
     description:
       "A simple and responsive notes web app for everyday productivity and keeping track of ideas.",
@@ -103,6 +117,7 @@ function Projects() {
             tech={project.tech}
             github={project.github}
             live={project.live}
+            prod={project.prod}
             description={project.description}
           />
         ))}

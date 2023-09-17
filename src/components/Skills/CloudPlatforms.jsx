@@ -16,11 +16,17 @@ function CloudPlatforms() {
         className="sm:hover:scale-110 ml-2 transition-all"
       />
       <Icon
+        icon="logos:elasticsearch"
+        width="42"
+        height="42"
+        className="sm:hover:scale-110 ml-2 transition-all"
+      />
+      {/* <Icon
         icon="logos:kubernetes"
         width="50"
         height="50"
         className="sm:hover:scale-110 ml-2 transition-all"
-      />
+      /> */}
       <Icon
         icon="logos:heroku-icon"
         width="45"
