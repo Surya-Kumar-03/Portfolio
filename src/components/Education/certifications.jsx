@@ -14,6 +14,7 @@ import brainBusters from "../../assets/brainBusters.webp";
 import udemyCert from "../../assets/udemyCert.webp";
 import hclCert from "../../assets/HCLCertificate.webp";
 import dbms from "../../assets/dbms.webp";
+import pwcCert from "../../assets/pwcCert.webp";
 import ImageLoader from "../Loader/loader";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
@@ -23,6 +24,11 @@ const images = [
     label: "Internship Completion Certificate",
     provider: "- HCL Technologies",
     imgPath: hclCert,
+  },
+  {
+    label: "PwC Launchpad Completion Certificate",
+    provider: "- PwC",
+    imgPath: pwcCert,
   },
   {
     label: "Brain Busters (Winner)",
@@ -114,7 +120,7 @@ function SwipeableTextMobileStepper() {
                 <div className="flex items-center justify-center h-64 w-full p-2 animate-pulse">
                   {" "}
                   <svg
-                    className="text-gray-300 h-56"
+                    className="text-gray-300 h-56 bg-white"
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
                     fill="currentColor"
