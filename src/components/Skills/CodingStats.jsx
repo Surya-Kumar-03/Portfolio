@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const CodingStats = () => {
-  const totalSolved = 430; //Hardcoded Question Count Here
+  const totalSolved = 520; //Hardcoded Question Count Here
   const [displayedValue, setDisplayedValue] = useState(0);
 
   useEffect(() => {

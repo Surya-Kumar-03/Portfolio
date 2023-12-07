@@ -27,7 +27,7 @@ function Education() {
           location="Seventh-Day Adventist School, Hosur."
         ></CardEdu>
       </div>
-      <div className="flex flex-col justify-center items-center rounded-3xl mt-4 pb-4 p-1 sm:p-4 bg-yellow-50 border-t-2 border-[#ffd700] w-full mx-5">
+      <div className="flex flex-col justify-center items-center rounded-3xl mt-4 pb-4 p-1 sm:p-4 w-full mx-5">
         <h1 className="text-3xl text-center animateSkillsHeading my-3">
           <span className="cardsSubtitleFont text-5xl text-pink-600 italic">
             Certifications

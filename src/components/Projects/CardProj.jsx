@@ -132,7 +132,12 @@ export default function CardProj(props) {
             Description:
           </Typography>
           <Typography paragraph theme={theme}>
-            {description}
+            {description &&
+              description.split("\n").map((line, index) => (
+                <Typography key={index} paragraph theme={theme}>
+                  {line}
+                </Typography>
+              ))}
           </Typography>
         </CardContent>
       </Collapse>
