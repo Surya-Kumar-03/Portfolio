@@ -11,6 +11,12 @@ function PLanguages() {
         className="sm:hover:scale-110 transition-all mr-[0.2rem]"
       />
       <Icon
+        icon="logos:java"
+        width="60"
+        height="52.5"
+        className="sm:hover:scale-110 transition-all mr-[0.2rem]"
+      />
+      <Icon
         icon="skill-icons:c"
         width="51"
         height="65"

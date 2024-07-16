@@ -23,6 +23,12 @@ function DevTools() {
         className="sm:hover:scale-110 ml-1 mr-1 transition-all"
       />
       <Icon
+        icon="logos:mercurial"
+        width="50"
+        height="50"
+        className="sm:hover:scale-110 ml-1 mr-1 transition-all"
+      />
+      <Icon
         icon="logos:visual-studio-code"
         width="45"
         height="45"
@@ -30,6 +36,12 @@ function DevTools() {
       />
       <Icon
         icon="logos:visual-studio"
+        width="45"
+        height="45"
+        className="mx-2 sm:hover:scale-110 transition-all"
+      />
+      <Icon
+        icon="devicon:intellij"
         width="45"
         height="45"
         className="mx-2 sm:hover:scale-110 transition-all"
