@@ -20,14 +20,14 @@ const CodingStats = () => {
 
   return (
     <div
-      className="flex flex-col w-full text-4xl font-light items-center justify-center
+      className="flex flex-col w-full text-2xl lg:text-4xl font-light items-center justify-center
     bg-gray-100 p-2 rounded-xl lg:bg-none -mt-4 sm:mt-9 animateFont-after"
     >
       <div className="flex flex-col lg:flex-row lg:gap-3 w-full justify-center items-center">
-        <h1 className="flex flex-row w-24 h-[70%] items-center justify-center font-medium pt-1 text-pink-600">
+        <h1 className="flex flex-row text-3xl lg:text-4xl w-24 h-[70%] items-center justify-center font-medium pt-1 text-pink-600">
           {displayedValue}+
         </h1>
-        <span className="cardsSubtitleFont text-5xl text-pink-600 italic m-3 mb-1 mt-2">
+        <span className="cardsSubtitleFont text-5xl lg:text-5xl text-pink-600 italic m-3 mb-1 mt-2">
           problems
         </span>{" "}
       </div>

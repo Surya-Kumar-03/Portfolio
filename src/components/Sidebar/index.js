@@ -17,12 +17,14 @@ function SideBar() {
       setPageNo(1);
     } else if (location.pathname === "/skills") {
       setPageNo(2);
-    } else if (location.pathname === "/projects") {
+    } else if (location.pathname === "/experience") {
       setPageNo(3);
-    } else if (location.pathname === "/education") {
+    } else if (location.pathname === "/projects") {
       setPageNo(4);
-    } else if (location.pathname === "/contact_me") {
+    } else if (location.pathname === "/education") {
       setPageNo(5);
+    } else if (location.pathname === "/contact_me") {
+      setPageNo(6);
     }
   }, [location]);
 
@@ -121,12 +123,32 @@ function SideBar() {
                 />
                 <h1 className="sidebar-text">Skills</h1>
               </NavLink>
+                            <NavLink
+                exact="true"
+                activeclassname="active"
+                to="/experience"
+                className={
+                  pageNo === 3
+                    ? "sidebar-optionSelected sidebar-option"
+                    : "sidebar-option"
+                }
+                onClick={navbarOpen && showSidebar ? handleChange : null}
+              >
+                <Icon
+                  icon="gg:work-alt"
+                  color="#cfd5db"
+                  width="30"
+                  height="30"
+                  className="sidebar-icon scale-125"
+                />
+                <h1 className="sidebar-text">Experience</h1>
+              </NavLink>
               <NavLink
                 exact="true"
                 activeclassname="active"
                 to="/projects"
                 className={
-                  pageNo === 3
+                  pageNo === 4
                     ? "sidebar-optionSelected sidebar-option"
                     : "sidebar-option"
                 }
@@ -146,7 +168,7 @@ function SideBar() {
                 activeclassname="active"
                 to="/education"
                 className={
-                  pageNo === 4
+                  pageNo === 5
                     ? "sidebar-optionSelected sidebar-option"
                     : "sidebar-option"
                 }
@@ -182,7 +204,7 @@ function SideBar() {
                 activeclassname="active"
                 to="/contact_me"
                 className={
-                  pageNo === 5
+                  pageNo === 6
                     ? "sidebar-optionSelected sidebar-option"
                     : "sidebar-option"
                 }
